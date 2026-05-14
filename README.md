@@ -15,7 +15,7 @@ Linear Regression
 
 ## How to Run
 1. Install dependencies:
-   pip install pandas scikit-learn matplotlib
+   pip install -r requirements.txt
 
 2. Run training:
    python model/train_model.py
