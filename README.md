@@ -22,7 +22,9 @@ Linear Regression
 
 3. Run analysis:
    python analysis.py
-
+ 
 ## Output
+
 - Model predicts rating based on inputs
 - Graph visualization of feedback
+- Graphs are automatically saved as PNG files in the `visualizations/` folder with timestamped filenames
