@@ -1,0 +1,76 @@
+{
+  "model_type": "RandomForestClassifier",
+  "features": [
+    "food_quality",
+    "cleanliness",
+    "quantity",
+    "taste"
+  ],
+  "target": "rating",
+  "test_metrics": {
+    "accuracy": 0.662,
+    "precision": 0.6565522544213747,
+    "recall": 0.662,
+    "f1_score": 0.6573175652557385,
+    "mae": 0.341,
+    "confusion_matrix": [
+      [
+        6,
+        27,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        177,
+        61,
+        3,
+        0
+      ],
+      [
+        0,
+        50,
+        309,
+        73,
+        0
+      ],
+      [
+        0,
+        0,
+        90,
+        153,
+        9
+      ],
+      [
+        0,
+        0,
+        0,
+        16,
+        17
+      ]
+    ]
+  },
+  "cv_results": {
+    "fold_scores": [
+      0.639,
+      0.647,
+      0.661,
+      0.649,
+      0.627
+    ],
+    "mean_score": 0.6446,
+    "std_score": 0.011271202242884306,
+    "cv_folds": 5
+  },
+  "feature_importance": {
+    "food_quality": 0.27151805504119453,
+    "cleanliness": 0.2233034595877896,
+    "quantity": 0.21573948931859033,
+    "taste": 0.28943899605242546
+  },
+  "train_samples": 4000,
+  "test_samples": 1000,
+  "total_samples": 5000,
+  "trained_at": "2026-05-15T11:47:10.585899"
+}
