@@ -26,3 +26,10 @@ Linear Regression
 ## Output
 - Model predicts rating based on inputs
 - Graph visualization of feedback
+
+## Data Visualization support
+- The project now includes visualization support to better understand dataset trends and feature relationships.
+- Rating Distribution Histogram
+- Feature Correlation Heatmap
+- Feature vs Rating Scatter Plots
+- Average Feature Score Bar Graph
