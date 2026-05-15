@@ -17,3 +17,15 @@ plt.grid(axis='y', linestyle='--', alpha=0.7)
 
 plt.tight_layout()
 plt.show()
+correlation = data.corr()
+
+plt.figure(figsize=(8,6))
+plt.imshow(correlation, cmap='coolwarm', interpolation='nearest')
+plt.colorbar()
+
+plt.xticks(range(len(correlation.columns)), correlation.columns, rotation=45)
+plt.yticks(range(len(correlation.columns)), correlation.columns)
+
+plt.title("Correlation Heatmap")
+plt.tight_layout()
+plt.show()
