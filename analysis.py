@@ -1,9 +1,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('data/mess_data.csv')
+try:
+    data = pd.read_csv('data/mess_data.csv')
 
-avg = data.mean()
+except FileNotFoundError:
+    print("Dataset file not found.")
+    exit()
+
+avg = data[['food_quality', 'cleanliness', 'quantity', 'taste', 'rating']].mean()
 
 plt.figure(figsize=(8,5))
 avg.plot(kind='bar')

@@ -4,13 +4,23 @@ from sklearn.linear_model import LinearRegression
 import pickle
 
 # Load dataset
-data = pd.read_csv('../data/mess_data.csv')
+try:
+    data = pd.read_csv('../data/mess_data.csv')
+
+except FileNotFoundError:
+    print("Dataset file not found.")
+    exit()
 
 X = data[['food_quality', 'cleanliness', 'quantity', 'taste']]
 y = data['rating']
 
 # Split data
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.2,
+    random_state=42
+)
 
 # Train model
 model = LinearRegression()
