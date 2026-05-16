@@ -1,0 +1,7 @@
+Best Model: Linear Regression
+Cross-Validation R^2 Score: 1.0000
+
+All Model Scores:
+Linear Regression: 1.0000
+Random Forest: 0.9709
+SVR: 0.9434
