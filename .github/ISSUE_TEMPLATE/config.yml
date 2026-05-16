@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name:  Ask a Question / Start a Discussion
+    url: https://github.com/Aniket-Singh10/mess-food-feedback-analyzer/discussions
+    about: For questions, ideas, or general discussion — not bugs or features.
+  - name:  GSSoC 2026 Program
+    url: https://gssoc.girlscript.tech
+    about: Learn more about GirlScript Summer of Code 2026.
