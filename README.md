@@ -26,3 +26,22 @@ Linear Regression
 ## Output
 - Model predicts rating based on inputs
 - Graph visualization of feedback
+
+## New Features Added
+
+- Sentiment Analysis using TextBlob
+- Positive/Negative review detection
+- Complaint Detection System
+- Sentiment Visualization Dashboard
+- Donut Chart Analytics
+
+## Technologies Used
+
+- Python
+- Pandas
+- TextBlob
+- Matplotlib
+- Scikit-learn
+
+## Dashboard Preview
+![Sentiment Dashboard](images/sentiment_dashboard.png)
