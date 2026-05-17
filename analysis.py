@@ -1,19 +1,34 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
+from pathlib import Path
 
-data = pd.read_csv('data/mess_data.csv')
+DATA_PATH = Path(__file__).resolve().parent / "data" / "mess_data.csv"
 
-avg = data.mean()
+def run_analysis():
+    if not DATA_PATH.exists():
+        print("Data file not found.")
+        return
 
-plt.figure(figsize=(8,5))
-avg.plot(kind='bar')
+    data = pd.read_csv(DATA_PATH)
+    
+    # 1. Bar Plot for Averages
+    plt.figure(figsize=(10, 5))
+    sns.set_style("whitegrid")
+    avg_ratings = data.mean()
+    avg_ratings.plot(kind='bar', color=['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f'])
+    
+    plt.title("Average Student Feedback Scores", fontsize=15)
+    plt.ylabel("Rating (1-5)")
+    plt.xticks(rotation=0)
+    plt.tight_layout()
+    plt.show()
 
-plt.title("Average Mess Food Feedback Analysis", fontsize=14)
-plt.xlabel("Features")
-plt.ylabel("Average Rating")
+    # 2. Correlation Heatmap
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(data.corr(), annot=True, cmap="YlGnBu")
+    plt.title("Feature Correlation Map")
+    plt.show()
 
-plt.xticks(rotation=30)
-plt.grid(axis='y', linestyle='--', alpha=0.7)
-
-plt.tight_layout()
-plt.show()
+if __name__ == "__main__":
+    run_analysis()
