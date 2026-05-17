@@ -1,16 +1,16 @@
-food_quality,cleanliness,quantity,taste,rating
-3,4,3,4,4
-2,3,2,2,2
-4,4,4,5,5
-3,3,3,3,3
-1,2,2,1,1
-5,5,5,5,5
-2,2,3,2,2
-4,3,4,4,4
-3,4,3,3,3
-1,1,2,1,1
-4,5,4,5,5
-2,3,3,2,2
-5,4,5,5,5
-3,2,3,3,3
-1,2,1,1,1
+food_quality,cleanliness,quantity,taste,rating,review
+3,4,3,4,4,Great food!
+2,3,2,2,2,Okay
+4,4,4,5,5,Excellent!
+3,3,3,3,3,Decent
+1,2,2,1,1,Poor
+5,5,5,5,5,Very good and clean!
+2,2,3,2,2,food was okay but not great
+4,3,4,4,4,Good food but could be cleaner
+3,4,3,3,3,Decent food
+1,1,2,1,1,Very bad not clean at all
+4,5,4,5,5,Amazing taste and hygine!
+2,3,3,2,2,Not very satisfying 
+5,4,5,5,5,Excellent meal and quality!
+3,2,3,3,3,Average experience
+1,2,1,1,1,Terrible food and cleanliness
