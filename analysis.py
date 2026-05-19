@@ -16,4 +16,11 @@ plt.xticks(rotation=30)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 
 plt.tight_layout()
-plt.show()
+import os
+
+# Ensure the static directory exists
+if not os.path.exists('static'):
+    os.makedirs('static')
+
+plt.savefig('static/analysis_plot.png')
+print("Graph saved to static/analysis_plot.png")
