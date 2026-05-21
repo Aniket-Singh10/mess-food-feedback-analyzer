@@ -23,6 +23,13 @@ Linear Regression
 3. Run analysis:
    python analysis.py
 
+## Streamlit Web App
+
+Run the interactive web app locally:
+```bash
+streamlit run app.py
+```
+
 ## Output
 - Model predicts rating based on inputs
 - Graph visualization of feedback
