@@ -4,7 +4,7 @@ from sklearn.linear_model import LinearRegression
 import pickle
 
 # Load dataset
-data = pd.read_csv('../data/mess_data.csv')
+data = pd.read_csv('data/mess_data.csv')
 
 X = data[['food_quality', 'cleanliness', 'quantity', 'taste']]
 y = data['rating']
