@@ -1,28 +1,51 @@
-## Problem Statement
-Mess food quality varies daily, and students often face inconsistency in food quality, cleanliness, and taste.
+## Mess Food Feedback Analyzer
 
-## Objective
-To analyze and predict mess food ratings using machine learning based on different factors.
+### Problem Statement
+Mess food quality varies daily, and students often face inconsistency in food quality, cleanliness, quantity, and taste.
 
-## Features Used
-- Food Quality
-- Cleanliness
-- Quantity
-- Taste
+### Objective
+Analyze historical mess feedback data and predict overall rating using machine learning.
 
-## Model Used
-Linear Regression
+### Features
+- Multi-model training pipeline (`LinearRegression`, `Ridge`, `RandomForestRegressor`)
+- Automatic best-model selection by R2 score
+- Model metadata export with metrics (`model/model_metadata.json`)
+- CLI prediction app with score validation and quality recommendations
+- Data analysis charts:
+  - average feature ratings bar chart
+  - feature-correlation heatmap
 
-## How to Run
-1. Install dependencies:
-   pip install pandas scikit-learn matplotlib
+### Dataset Columns
+- `food_quality`
+- `cleanliness`
+- `quantity`
+- `taste`
+- `rating` (target)
 
-2. Run training:
-   python model/train_model.py
+### Requirements
+Use Python 3.9+.
 
-3. Run analysis:
-   python analysis.py
+Install dependencies:
+```bash
+pip install pandas scikit-learn matplotlib
+```
 
-## Output
-- Model predicts rating based on inputs
-- Graph visualization of feedback
+### How to Run
+1. Train and select best model:
+```bash
+python model/train_model.py
+```
+2. Generate analytics charts:
+```bash
+python analysis.py
+```
+3. Run prediction app:
+```bash
+python app.py
+```
+
+### Generated Outputs
+- `model/model.pkl`
+- `model/model_metadata.json`
+- `outputs/average_feedback.png`
+- `outputs/correlation_heatmap.png`
