@@ -9,7 +9,7 @@
 
 | Home | Single Prediction | Visual Analysis | Visual Analysis |
 |------|-------------------|--------------|
-| ![Home](screenshots/home.png) | ![Prediction](screenshots/prediction.png) | ![Visuals](screenshots/visual_1.png) | ![Visuals](screenshots/visual_2.png) |
+| ![Home](screenshots/home.png) | ![Prediction](screenshots/predictions.png) | ![Visuals](screenshots/visual_1.png) | ![Visuals](screenshots/visual_2.png) |
 
 ---
 
