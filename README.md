@@ -7,9 +7,9 @@
 
 ## 📸 Screenshots
 
-| Home | Single Prediction | CSV Analysis |
+| Home | Single Prediction | Visual Analysis | Visual Analysis |
 |------|-------------------|--------------|
-| *(add screenshot)* | *(add screenshot)* | *(add screenshot)* |
+| ![Home](screenshots/home.png) | ![Prediction](screenshots/prediction.png) | ![Visuals](screenshots/visual_1.png) | ![Visuals](screenshots/visual_2.png) |
 
 ---
 
