@@ -1,0 +1,160 @@
+[
+  {
+    "date": "2026-05-12",
+    "meal_type": "lunch",
+    "cleanliness": 4.0,
+    "overall_rating": 4.0,
+    "items": {
+      "dal": { "quality": 3.0, "taste": 4.0, "quantity": 3.0 },
+      "gravy_sabzi": { "quality": 3.0, "taste": 4.0, "quantity": 3.0 },
+      "rice": { "quality": 3.0, "taste": 4.0, "quantity": 3.0 }
+    }
+  },
+  {
+    "date": "2026-05-12",
+    "meal_type": "dinner",
+    "cleanliness": 3.0,
+    "overall_rating": 2.0,
+    "items": {
+      "dal": { "quality": 2.0, "taste": 2.0, "quantity": 2.0 },
+      "dry_sabzi": { "quality": 2.0, "taste": 2.0, "quantity": 2.0 }
+    }
+  },
+  {
+    "date": "2026-05-13",
+    "meal_type": "lunch",
+    "cleanliness": 4.0,
+    "overall_rating": 5.0,
+    "items": {
+      "dal": { "quality": 4.0, "taste": 5.0, "quantity": 4.0 },
+      "gravy_sabzi": { "quality": 4.0, "taste": 5.0, "quantity": 4.0 },
+      "rice": { "quality": 4.0, "taste": 5.0, "quantity": 4.0 }
+    }
+  },
+  {
+    "date": "2026-05-13",
+    "meal_type": "dinner",
+    "cleanliness": 3.0,
+    "overall_rating": 3.0,
+    "items": {
+      "dal": { "quality": 3.0, "taste": 3.0, "quantity": 3.0 },
+      "dry_sabzi": { "quality": 3.0, "taste": 3.0, "quantity": 3.0 }
+    }
+  },
+  {
+    "date": "2026-05-14",
+    "meal_type": "lunch",
+    "cleanliness": 2.0,
+    "overall_rating": 1.0,
+    "items": {
+      "dal": { "quality": 1.0, "taste": 1.0, "quantity": 2.0 },
+      "gravy_sabzi": { "quality": 1.0, "taste": 1.0, "quantity": 2.0 },
+      "rice": { "quality": 1.0, "taste": 1.0, "quantity": 2.0 }
+    }
+  },
+  {
+    "date": "2026-05-14",
+    "meal_type": "dinner",
+    "cleanliness": 5.0,
+    "overall_rating": 5.0,
+    "items": {
+      "dal": { "quality": 5.0, "taste": 5.0, "quantity": 5.0 },
+      "dry_sabzi": { "quality": 5.0, "taste": 5.0, "quantity": 5.0 }
+    }
+  },
+  {
+    "date": "2026-05-15",
+    "meal_type": "lunch",
+    "cleanliness": 2.0,
+    "overall_rating": 2.0,
+    "items": {
+      "dal": { "quality": 2.0, "taste": 2.0, "quantity": 3.0 },
+      "gravy_sabzi": { "quality": 2.0, "taste": 2.0, "quantity": 3.0 },
+      "rice": { "quality": 2.0, "taste": 2.0, "quantity": 3.0 }
+    }
+  },
+  {
+    "date": "2026-05-15",
+    "meal_type": "dinner",
+    "cleanliness": 3.0,
+    "overall_rating": 4.0,
+    "items": {
+      "dal": { "quality": 4.0, "taste": 4.0, "quantity": 4.0 },
+      "dry_sabzi": { "quality": 4.0, "taste": 4.0, "quantity": 4.0 }
+    }
+  },
+  {
+    "date": "2026-05-16",
+    "meal_type": "lunch",
+    "cleanliness": 4.0,
+    "overall_rating": 3.0,
+    "items": {
+      "dal": { "quality": 3.0, "taste": 3.0, "quantity": 3.0 },
+      "gravy_sabzi": { "quality": 3.0, "taste": 3.0, "quantity": 3.0 },
+      "rice": { "quality": 3.0, "taste": 3.0, "quantity": 3.0 }
+    }
+  },
+  {
+    "date": "2026-05-16",
+    "meal_type": "dinner",
+    "cleanliness": 1.0,
+    "overall_rating": 1.0,
+    "items": {
+      "dal": { "quality": 1.0, "taste": 1.0, "quantity": 2.0 },
+      "dry_sabzi": { "quality": 1.0, "taste": 1.0, "quantity": 2.0 }
+    }
+  },
+  {
+    "date": "2026-05-17",
+    "meal_type": "lunch",
+    "cleanliness": 5.0,
+    "overall_rating": 5.0,
+    "items": {
+      "dal": { "quality": 4.0, "taste": 5.0, "quantity": 4.0 },
+      "gravy_sabzi": { "quality": 4.0, "taste": 5.0, "quantity": 4.0 },
+      "rice": { "quality": 4.0, "taste": 5.0, "quantity": 4.0 }
+    }
+  },
+  {
+    "date": "2026-05-17",
+    "meal_type": "dinner",
+    "cleanliness": 3.0,
+    "overall_rating": 2.0,
+    "items": {
+      "dal": { "quality": 2.0, "taste": 2.0, "quantity": 3.0 },
+      "dry_sabzi": { "quality": 2.0, "taste": 2.0, "quantity": 3.0 }
+    }
+  },
+  {
+    "date": "2026-05-18",
+    "meal_type": "lunch",
+    "cleanliness": 4.0,
+    "overall_rating": 5.0,
+    "items": {
+      "dal": { "quality": 5.0, "taste": 5.0, "quantity": 5.0 },
+      "gravy_sabzi": { "quality": 5.0, "taste": 5.0, "quantity": 5.0 },
+      "rice": { "quality": 5.0, "taste": 5.0, "quantity": 5.0 }
+    }
+  },
+  {
+    "date": "2026-05-18",
+    "meal_type": "dinner",
+    "cleanliness": 2.0,
+    "overall_rating": 3.0,
+    "items": {
+      "dal": { "quality": 3.0, "taste": 3.0, "quantity": 3.0 },
+      "dry_sabzi": { "quality": 3.0, "taste": 3.0, "quantity": 3.0 }
+    }
+  },
+  {
+    "date": "2026-05-19",
+    "meal_type": "lunch",
+    "cleanliness": 2.0,
+    "overall_rating": 1.0,
+    "items": {
+      "dal": { "quality": 1.0, "taste": 1.0, "quantity": 1.0 },
+      "gravy_sabzi": { "quality": 1.0, "taste": 1.0, "quantity": 1.0 },
+      "rice": { "quality": 1.0, "taste": 1.0, "quantity": 1.0 }
+    }
+  }
+]
