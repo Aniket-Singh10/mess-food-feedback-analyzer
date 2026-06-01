@@ -47,6 +47,11 @@ def main():
             print(f"Warning: Dropped {dropped_invalid} rows with values outside the 1-5 scale.")
         if data.empty:
             raise ValueError("Error: Dataset is empty after preprocessing and validation. Cannot train model.")
+        if len(data) < 2:
+            raise ValueError(
+                "Not enough valid samples available after preprocessing. "
+                f"Only found {len(data)} sample(s). Minimum 2 samples required for training."
+            )
         X = data[['food_quality', 'cleanliness', 'quantity', 'taste']]
         y = data['rating']
     except Exception as e:
