@@ -6,6 +6,15 @@ import pickle
 # Load dataset
 data = pd.read_csv('../data/mess_data.csv')
 
+# Dataset validation (from incoming commit)
+print("Dataset Shape:", data.shape)
+print("\nMissing Values:")
+print(data.isnull().sum())
+
+# Remove missing values if any
+data = data.fillna(data.median(numeric_only=True))
+
+# Features and target
 X = data[['food_quality', 'cleanliness', 'quantity', 'taste']]
 y = data['rating']
 
