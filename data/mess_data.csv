@@ -1,16 +1,1001 @@
-food_quality,cleanliness,quantity,taste,rating
-3,4,3,4,4
-2,3,2,2,2
-4,4,4,5,5
-3,3,3,3,3
-1,2,2,1,1
-5,5,5,5,5
-2,2,3,2,2
-4,3,4,4,4
-3,4,3,3,3
-1,1,2,1,1
-4,5,4,5,5
-2,3,3,2,2
-5,4,5,5,5
-3,2,3,3,3
-1,2,1,1,1
+food_quality,cleanliness,quantity,taste,service,waiting_time,meal_type,hostel_block,feedback_text,date,rating
+1,1,1,5,1.0,2.0,Dinner,Block-B,Rice was undercooked,2025-09-06,2
+5,3,3,4,3.0,3.0,Dinner,Block-A,Food was tasty but quantity was less,2026-04-25,4
+4,5,2,4,4.0,5.0,Lunch,Block-C,Good quantity and excellent taste,2026-03-07,4
+4,4,1,2,2.0,5.0,Dinner,Block-A,Good quantity and excellent taste,2026-05-06,3
+5,5,4,2,5.0,3.0,Breakfast,Block-C,Mess area was not clean,2026-01-17,4
+2,5,3,1,4.0,5.0,Breakfast,Block-D,Fresh food and clean dining area,2025-11-02,3
+3,1,1,2,2.0,2.0,Lunch,Block-C,Very good service today,2026-02-16,2
+2,5,1,5,4.0,1.0,Lunch,Block-B,Clean environment but average taste,2025-09-26,3
+1,1,1,2,5.0,2.0,Lunch,Block-A,Good service but poor cleanliness,2025-06-29,1
+4,3,3,4,5.0,1.0,Dinner,Block-D,Too much waiting time,2026-03-24,4
+2,4,3,2,3.0,5.0,Dinner,Block-A,Food was cold,2025-11-28,3
+4,4,4,2,2.0,1.0,Dinner,Block-B,Taste needs improvement,2026-03-22,4
+1,5,1,1,3.0,1.0,Dinner,Block-C,Fresh food and clean dining area,2025-10-22,2
+4,4,4,3,4.0,2.0,Breakfast,Block-A,Very good service today,2025-07-05,4
+2,3,3,5,5.0,3.0,Breakfast,Block-A,Food was tasty but quantity was less,2026-05-04,3
+1,3,3,2,1.0,4.0,Lunch,Block-C,Food was cold,2025-07-03,2
+1,4,5,2,2.0,1.0,Breakfast,Block-B,Clean environment but average taste,2025-07-28,3
+1,5,5,5,5.0,1.0,Dinner,Block-A,Food was tasty but quantity was less,2025-10-05,4
+3,3,2,4,4.0,2.0,Dinner,Block-C,Dinner quality has improved recently,2026-02-02,3
+3,3,3,5,2.0,4.0,Dinner,Block-C,Mess area was not clean,2026-04-12,4
+1,5,3,2,1.0,2.0,Dinner,Block-A,Food was tasty but quantity was less,2025-08-13,3
+5,4,5,5,4.0,1.0,Lunch,Block-D,Dinner quality has improved recently,2026-05-01,5
+4,2,5,5,2.0,5.0,Dinner,Block-C,Taste needs improvement,2025-08-09,4
+3,1,4,5,4.0,4.0,Breakfast,Block-B,Food was tasty but quantity was less,2026-02-14,3
+3,3,2,4,1.0,2.0,Lunch,Block-B,Rice was undercooked,2025-09-18,3
+3,1,2,1,4.0,5.0,Breakfast,Block-C,Food was tasty but quantity was less,2025-09-09,2
+4,2,3,4,4.0,4.0,Lunch,Block-B,Food was tasty but quantity was less,2025-07-04,3
+3,1,5,4,3.0,2.0,Lunch,Block-C,Fresh food and clean dining area,2025-12-23,3
+5,2,4,3,1.0,4.0,Lunch,Block-B,Quantity was sufficient but food was cold,2025-06-11,4
+3,1,2,5,2.0,1.0,Dinner,Block-A,Fresh food and clean dining area,2025-07-17,3
+2,4,2,1,4.0,2.0,Dinner,Block-D,Taste needs improvement,2025-12-08,2
+5,4,5,2,1.0,2.0,Lunch,Block-B,Dinner quality has improved recently,2025-08-16,4
+4,4,2,3,2.0,3.0,Breakfast,Block-C,Food was tasty but quantity was less,2025-07-24,3
+4,2,4,1,4.0,1.0,Dinner,Block-B,Quantity was sufficient but food was cold,2025-09-02,3
+3,2,4,1,3.0,3.0,Dinner,Block-D,Taste needs improvement,2026-01-03,2
+3,5,5,1,4.0,1.0,Lunch,Block-D,Dinner quality has improved recently,2026-05-27,4
+3,3,3,4,5.0,5.0,Dinner,Block-B,Quantity was sufficient but food was cold,2025-12-29,3
+2,1,4,2,5.0,5.0,Dinner,Block-C,Good quantity and excellent taste,2026-05-17,2
+4,1,2,2,3.0,2.0,Dinner,Block-D,Mess area was not clean,2025-12-14,2
+3,4,2,1,3.0,1.0,Lunch,Block-C,Mess area was not clean,2025-07-06,2
+2,2,3,2,4.0,3.0,Lunch,Block-D,Good quantity and excellent taste,2026-02-07,2
+3,1,5,3,4.0,2.0,Dinner,Block-D,Fresh food and clean dining area,2026-04-27,3
+4,1,4,3,2.0,1.0,Breakfast,Block-C,Fresh food and clean dining area,2026-02-25,3
+1,5,3,4,1.0,5.0,Lunch,Block-D,Clean environment but average taste,2025-09-11,3
+2,3,3,2,4.0,2.0,Breakfast,Block-A,Very good service today,2025-11-18,2
+1,2,2,2,5.0,5.0,Lunch,Block-C,Dinner quality has improved recently,2025-09-07,2
+2,3,1,4,1.0,1.0,Dinner,Block-C,Food was cold,2026-04-19,2
+1,2,2,4,4.0,3.0,Dinner,Block-A,Quantity was sufficient but food was cold,2025-09-02,2
+3,3,2,5,5.0,3.0,Dinner,Block-D,Quantity was sufficient but food was cold,2026-01-11,3
+4,1,1,2,3.0,4.0,Dinner,Block-C,Rice was undercooked,2025-08-05,2
+3,3,2,1,3.0,5.0,Dinner,Block-D,Too much waiting time,2026-03-10,2
+3,1,2,3,5.0,2.0,Dinner,Block-A,Mess area was not clean,2026-02-28,2
+2,3,4,4,1.0,5.0,Dinner,Block-C,Good service but poor cleanliness,2026-01-29,3
+3,5,1,2,5.0,2.0,Dinner,Block-B,Dinner quality has improved recently,2026-03-05,3
+3,5,2,4,4.0,2.0,Dinner,Block-C,Food was cold,2026-02-13,4
+1,1,3,4,1.0,5.0,Breakfast,Block-B,Taste needs improvement,2025-06-25,2
+2,3,1,1,3.0,2.0,Dinner,Block-C,Food was cold,2025-10-25,2
+3,1,5,5,5.0,2.0,Breakfast,Block-D,Fresh food and clean dining area,2025-12-16,4
+5,3,4,5,1.0,4.0,Dinner,Block-A,Good quantity and excellent taste,2025-07-01,4
+3,2,5,1,5.0,1.0,Dinner,Block-C,Dinner quality has improved recently,2026-04-23,3
+3,2,5,2,4.0,3.0,Lunch,Block-A,Very good service today,2026-01-14,3
+4,5,3,2,2.0,3.0,Breakfast,Block-D,Mess area was not clean,2025-12-23,4
+5,3,2,5,4.0,5.0,Breakfast,Block-C,Taste needs improvement,2026-04-18,4
+4,2,1,3,1.0,3.0,Dinner,Block-B,Rice was undercooked,2026-02-26,2
+3,4,5,1,2.0,2.0,Dinner,Block-B,Food was tasty and hygienic,2025-09-22,3
+2,4,4,2,5.0,3.0,Dinner,Block-B,Quantity was sufficient but food was cold,2025-06-23,3
+2,4,1,2,2.0,3.0,Lunch,Block-C,Fresh food and clean dining area,2025-10-15,2
+3,4,3,1,4.0,4.0,Lunch,Block-B,Rice was undercooked,2025-08-09,3
+3,2,4,1,4.0,1.0,Breakfast,Block-B,Too much waiting time,2026-04-30,2
+2,3,4,4,5.0,4.0,Dinner,Block-A,Very good service today,2025-08-05,3
+5,2,3,2,5.0,2.0,Dinner,Block-B,Mess area was not clean,2026-04-20,3
+1,4,4,1,1.0,2.0,Breakfast,Block-B,Food was tasty and hygienic,2025-06-25,2
+1,4,1,3,2.0,5.0,Breakfast,Block-A,Food was tasty and hygienic,2026-05-22,2
+5,1,4,3,5.0,5.0,Dinner,Block-D,Fresh food and clean dining area,2025-07-31,3
+2,2,3,5,3.0,4.0,Breakfast,Block-C,Food was tasty and hygienic,2026-05-29,3
+4,3,2,1,5.0,4.0,Dinner,Block-D,Good quantity and excellent taste,2025-10-01,2
+1,5,1,5,2.0,5.0,Dinner,Block-A,Quantity was sufficient but food was cold,2025-08-27,3
+4,2,1,1,3.0,5.0,Dinner,Block-C,Dinner quality has improved recently,2026-01-17,2
+3,5,4,1,5.0,5.0,Lunch,Block-A,Rice was undercooked,2026-02-16,3
+4,5,1,2,3.0,1.0,Dinner,Block-C,Very good service today,2025-12-07,3
+4,2,5,2,2.0,3.0,Dinner,Block-D,Good quantity and excellent taste,2026-03-03,3
+3,2,5,5,2.0,2.0,Breakfast,Block-D,Fresh food and clean dining area,2025-10-16,4
+5,3,4,3,3.0,2.0,Lunch,Block-C,Good service but poor cleanliness,2025-11-07,4
+5,2,5,2,3.0,1.0,Lunch,Block-B,Fresh food and clean dining area,2025-11-05,4
+2,2,1,3,2.0,1.0,Dinner,Block-C,Taste needs improvement,2026-01-12,2
+3,1,2,3,1.0,4.0,Dinner,Block-D,Food was tasty but quantity was less,2025-06-27,2
+2,5,4,2,2.0,5.0,Breakfast,Block-C,Very good service today,2026-02-28,3
+2,1,5,1,4.0,5.0,Dinner,Block-C,Good quantity and excellent taste,2025-12-09,2
+1,5,2,1,2.0,2.0,Lunch,Block-B,Food was tasty but quantity was less,2025-08-05,2
+5,1,2,2,1.0,2.0,Dinner,Block-D,Quantity was sufficient but food was cold,2025-10-16,2
+3,3,5,3,4.0,1.0,Breakfast,Block-C,Good quantity and excellent taste,2026-04-30,4
+2,3,1,2,1.0,4.0,Dinner,Block-B,Too much waiting time,2026-05-09,2
+4,1,5,1,5.0,1.0,Dinner,Block-C,Very good service today,2026-01-29,3
+3,1,2,3,5.0,1.0,Dinner,Block-C,Good quantity and excellent taste,2026-04-10,2
+1,1,1,2,4.0,2.0,Lunch,Block-C,Food was tasty but quantity was less,2025-06-17,1
+3,4,2,5,4.0,4.0,Dinner,Block-D,Food was tasty but quantity was less,2026-01-25,4
+1,3,3,5,1.0,1.0,Dinner,Block-B,Fresh food and clean dining area,2026-04-14,3
+3,4,2,4,1.0,3.0,Lunch,Block-A,Food was tasty and hygienic,2026-04-18,3
+3,5,1,3,1.0,2.0,Dinner,Block-A,Too much waiting time,2026-02-12,3
+1,4,3,4,5.0,2.0,Breakfast,Block-A,Food was cold,2026-02-26,3
+2,2,4,3,3.0,4.0,Dinner,Block-C,Very good service today,2025-07-29,3
+2,1,3,5,5.0,3.0,Lunch,Block-C,Too much waiting time,2025-11-03,3
+4,3,2,1,2.0,1.0,Dinner,Block-D,Fresh food and clean dining area,2025-10-05,2
+5,1,3,2,1.0,2.0,Breakfast,Block-C,Food was cold,2025-11-16,3
+5,2,2,3,4.0,5.0,Lunch,Block-B,Too much waiting time,2025-11-12,3
+2,3,5,5,4.0,5.0,Dinner,Block-C,Mess area was not clean,2026-04-20,4
+5,4,1,2,1.0,1.0,Lunch,Block-C,Clean environment but average taste,2025-08-10,3
+1,4,3,3,2.0,,Lunch,Block-B,Too much waiting time,2026-04-08,3
+3,2,1,1,4.0,1.0,Breakfast,Block-B,Quantity was sufficient but food was cold,2025-10-07,2
+5,3,1,4,3.0,3.0,Dinner,Block-D,Good service but poor cleanliness,2026-02-26,3
+2,4,3,5,4.0,2.0,Dinner,Block-A,Food was tasty and hygienic,2025-06-29,4
+3,4,3,4,4.0,5.0,Lunch,Block-C,Rice was undercooked,2026-05-28,4
+2,1,3,5,3.0,3.0,Breakfast,Block-A,Taste needs improvement,2025-09-03,3
+3,1,1,1,5.0,5.0,Lunch,Block-D,Taste needs improvement,2025-12-09,2
+5,4,5,1,2.0,3.0,Breakfast,Block-A,Fresh food and clean dining area,2025-06-04,4
+3,3,1,2,5.0,5.0,Dinner,Block-B,Mess area was not clean,2025-12-07,2
+1,4,5,1,5.0,5.0,Breakfast,Block-B,Good quantity and excellent taste,2026-01-25,3
+2,1,2,5,5.0,3.0,Breakfast,Block-B,Good service but poor cleanliness,2026-03-24,2
+1,1,4,1,1.0,2.0,Lunch,Block-B,Dinner quality has improved recently,2026-02-16,2
+2,3,3,3,1.0,3.0,Lunch,Block-A,Quantity was sufficient but food was cold,2026-04-03,3
+4,3,1,1,1.0,2.0,Breakfast,Block-A,Clean environment but average taste,2025-06-04,2
+1,2,2,3,5.0,4.0,Lunch,Block-C,Good service but poor cleanliness,2026-05-25,2
+5,1,4,4,1.0,2.0,Dinner,Block-D,Quantity was sufficient but food was cold,2025-11-02,4
+4,5,4,5,1.0,1.0,Dinner,Block-C,Very good service today,2025-08-13,4
+3,3,1,5,4.0,3.0,Breakfast,Block-C,Dinner quality has improved recently,2026-03-27,3
+1,2,2,3,1.0,1.0,Dinner,Block-B,Mess area was not clean,2026-04-13,2
+4,5,1,1,5.0,5.0,Lunch,Block-A,Food was tasty but quantity was less,2025-11-11,3
+3,1,3,1,3.0,1.0,Breakfast,Block-B,Food was cold,2026-02-15,2
+1,1,1,5,1.0,2.0,Dinner,Block-B,Fresh food and clean dining area,2025-10-03,2
+5,2,2,2,3.0,3.0,Breakfast,Block-A,Dinner quality has improved recently,2025-09-09,3
+1,3,2,1,4.0,1.0,Dinner,Block-C,Food was tasty and hygienic,2025-09-13,2
+2,5,5,5,4.0,4.0,Dinner,Block-C,Too much waiting time,2026-01-02,4
+4,4,4,1,4.0,4.0,Lunch,Block-D,Good quantity and excellent taste,2026-01-03,3
+5,2,5,1,2.0,2.0,Breakfast,Block-C,Food was tasty but quantity was less,2026-01-17,3
+5,4,3,1,,2.0,Dinner,Block-D,Rice was undercooked,2025-07-16,3
+5,4,2,4,3.0,1.0,Lunch,Block-B,Good service but poor cleanliness,2025-07-11,4
+2,1,3,3,5.0,3.0,Lunch,Block-C,Rice was undercooked,2026-03-16,2
+1,1,4,4,1.0,3.0,Dinner,Block-D,Good service but poor cleanliness,2025-09-20,2
+5,3,1,1,5.0,2.0,Lunch,Block-B,Taste needs improvement,2025-06-24,2
+1,2,5,3,2.0,1.0,Dinner,Block-C,Fresh food and clean dining area,2026-02-26,3
+1,2,1,2,5.0,2.0,Breakfast,Block-D,Clean environment but average taste,2025-09-09,2
+5,3,4,4,4.0,4.0,Lunch,Block-A,Too much waiting time,2025-08-20,4
+3,2,1,4,4.0,4.0,Dinner,Block-A,Rice was undercooked,2026-02-13,2
+5,2,1,1,2.0,1.0,Dinner,Block-B,Food was tasty and hygienic,2025-12-07,2
+5,5,5,5,5.0,1.0,Breakfast,Block-A,Good quantity and excellent taste,2026-03-07,5
+2,2,5,4,1.0,4.0,Dinner,Block-A,Taste needs improvement,2026-02-22,3
+4,3,1,1,1.0,1.0,Dinner,Block-B,Dinner quality has improved recently,2025-09-18,2
+4,1,1,5,2.0,5.0,Dinner,Block-A,Too much waiting time,2025-09-23,3
+2,3,5,2,1.0,5.0,Lunch,Block-C,Food was tasty and hygienic,2025-06-08,3
+5,1,4,5,5.0,5.0,Dinner,Block-D,Good quantity and excellent taste,2025-08-04,4
+3,4,2,4,3.0,2.0,Lunch,Block-B,Mess area was not clean,2025-08-31,3
+3,5,4,2,2.0,2.0,Breakfast,Block-A,Dinner quality has improved recently,2025-07-27,4
+4,1,1,4,3.0,4.0,Lunch,Block-C,Taste needs improvement,2025-08-08,2
+2,3,3,4,4.0,3.0,Lunch,Block-C,Too much waiting time,2025-10-21,3
+4,3,5,4,2.0,4.0,Breakfast,Block-C,Food was tasty and hygienic,2025-11-06,4
+5,4,1,3,4.0,4.0,Dinner,Block-D,Good quantity and excellent taste,2025-08-28,3
+1,4,4,5,4.0,1.0,Breakfast,Block-C,Taste needs improvement,2025-10-19,4
+5,1,3,1,1.0,3.0,Breakfast,Block-D,Food was tasty and hygienic,2025-12-18,2
+3,4,3,2,1.0,5.0,Lunch,Block-B,Rice was undercooked,2025-10-22,3
+3,1,4,2,4.0,4.0,Dinner,Block-B,Fresh food and clean dining area,2026-04-13,2
+2,2,2,2,2.0,2.0,Lunch,Block-A,Rice was undercooked,2025-06-17,2
+5,4,2,2,2.0,2.0,Dinner,Block-D,Taste needs improvement,2026-01-11,3
+5,1,5,2,4.0,3.0,Lunch,Block-B,Food was cold,2025-09-23,3
+3,3,4,2,5.0,3.0,Breakfast,Block-A,Food was tasty but quantity was less,2025-06-03,3
+4,1,3,2,3.0,2.0,Breakfast,Block-A,Taste needs improvement,2026-01-21,2
+2,5,3,5,5.0,5.0,Lunch,Block-C,Rice was undercooked,2026-04-29,4
+3,5,4,1,1.0,3.0,Lunch,Block-D,Very good service today,2025-06-26,3
+4,1,1,3,2.0,2.0,Dinner,Block-A,Dinner quality has improved recently,2025-11-21,2
+2,3,5,3,4.0,5.0,Breakfast,Block-D,Food was tasty and hygienic,2025-06-05,3
+5,1,1,4,4.0,5.0,Breakfast,Block-C,Very good service today,2025-10-08,3
+3,3,4,3,4.0,4.0,Lunch,Block-B,Rice was undercooked,2026-05-22,3
+5,5,1,4,,4.0,Lunch,Block-C,Quantity was sufficient but food was cold,2025-07-31,4
+2,3,4,5,1.0,3.0,Dinner,Block-D,Mess area was not clean,2025-06-18,4
+1,4,2,1,3.0,3.0,Dinner,Block-C,Food was tasty but quantity was less,2025-12-03,2
+3,3,1,2,2.0,5.0,Dinner,Block-B,Food was cold,2026-05-31,2
+4,2,5,3,1.0,4.0,Lunch,Block-D,Mess area was not clean,2026-02-28,4
+3,1,2,5,3.0,5.0,Dinner,Block-B,Good quantity and excellent taste,2025-10-03,3
+5,3,3,3,4.0,3.0,Lunch,Block-C,Good service but poor cleanliness,2025-06-04,4
+4,1,4,3,1.0,4.0,Breakfast,Block-A,Clean environment but average taste,2025-07-12,3
+2,1,1,3,1.0,2.0,Dinner,Block-B,Good quantity and excellent taste,2025-11-26,2
+2,5,3,4,5.0,4.0,Dinner,Block-A,Taste needs improvement,2025-11-11,4
+1,5,5,1,4.0,5.0,Dinner,Block-A,Rice was undercooked,2025-08-11,3
+4,2,5,2,5.0,4.0,Lunch,Block-C,Food was cold,2025-08-13,3
+1,4,2,5,2.0,1.0,Breakfast,Block-D,Food was tasty and hygienic,2025-06-22,3
+3,3,1,3,2.0,4.0,Dinner,Block-C,Dinner quality has improved recently,2025-10-09,2
+3,3,5,3,2.0,4.0,Breakfast,Block-A,Taste needs improvement,2026-04-24,4
+3,1,2,1,5.0,4.0,Breakfast,Block-A,Good service but poor cleanliness,2025-08-26,2
+1,2,3,2,5.0,3.0,Dinner,Block-C,Mess area was not clean,2025-12-05,2
+5,4,3,3,4.0,1.0,Dinner,Block-B,Good quantity and excellent taste,2026-03-25,4
+4,4,1,3,4.0,2.0,Dinner,Block-C,Good service but poor cleanliness,2025-09-22,3
+1,5,5,2,3.0,4.0,Breakfast,Block-D,Food was tasty but quantity was less,2025-11-27,3
+1,3,2,4,,5.0,Lunch,Block-D,Food was tasty and hygienic,2025-06-09,2
+2,3,4,1,2.0,5.0,Dinner,Block-A,Rice was undercooked,2026-01-10,2
+5,5,3,5,5.0,1.0,Lunch,Block-C,Too much waiting time,2025-12-08,4
+3,3,3,1,2.0,2.0,Breakfast,Block-D,Food was cold,2025-09-17,2
+5,1,2,1,2.0,3.0,Breakfast,Block-A,Too much waiting time,2025-10-02,2
+1,5,5,3,4.0,5.0,Dinner,Block-A,Rice was undercooked,2026-03-10,4
+4,3,4,3,5.0,2.0,Breakfast,Block-C,Fresh food and clean dining area,2026-04-09,4
+4,1,2,5,5.0,5.0,Breakfast,Block-D,Good service but poor cleanliness,2026-03-04,3
+5,5,5,3,4.0,4.0,Dinner,Block-A,Dinner quality has improved recently,2026-01-13,4
+3,5,2,1,5.0,4.0,Breakfast,Block-A,Dinner quality has improved recently,2026-04-13,3
+3,2,4,2,4.0,3.0,Lunch,Block-A,Mess area was not clean,2025-09-22,3
+4,2,4,1,3.0,5.0,Breakfast,Block-A,Food was tasty and hygienic,2025-07-14,3
+3,5,5,2,4.0,4.0,Lunch,Block-C,Food was cold,2025-08-15,4
+4,1,1,5,,3.0,Lunch,Block-A,Food was tasty but quantity was less,2025-10-27,3
+4,2,3,1,4.0,1.0,Lunch,Block-D,Food was tasty and hygienic,2026-04-15,2
+1,4,3,5,4.0,4.0,Lunch,Block-C,Good quantity and excellent taste,2026-03-03,3
+1,4,1,1,5.0,1.0,Dinner,Block-B,Rice was undercooked,2025-08-28,2
+2,5,4,1,1.0,4.0,Breakfast,Block-C,Very good service today,2026-04-10,3
+5,2,2,4,4.0,5.0,Dinner,Block-B,Taste needs improvement,2025-11-08,3
+1,1,5,1,5.0,2.0,Breakfast,Block-D,Food was cold,2026-02-09,2
+5,2,3,1,1.0,1.0,Lunch,Block-C,Taste needs improvement,2026-04-01,3
+2,4,3,2,3.0,4.0,Dinner,Block-D,Food was tasty but quantity was less,2025-11-18,3
+5,1,4,4,2.0,1.0,Dinner,Block-B,Fresh food and clean dining area,2025-10-01,4
+5,1,5,4,5.0,5.0,Lunch,Block-C,Dinner quality has improved recently,2025-09-21,4
+2,1,1,3,2.0,3.0,Dinner,Block-D,Clean environment but average taste,2026-05-13,2
+3,2,4,1,2.0,2.0,Dinner,Block-A,Good service but poor cleanliness,2025-06-11,2
+1,4,1,2,1.0,1.0,Breakfast,Block-A,Clean environment but average taste,2026-02-08,2
+3,3,1,5,4.0,3.0,Breakfast,Block-A,Food was tasty but quantity was less,2025-12-28,3
+4,2,2,3,5.0,3.0,Lunch,Block-D,Quantity was sufficient but food was cold,2025-08-17,3
+4,1,5,3,5.0,4.0,Breakfast,Block-B,Quantity was sufficient but food was cold,2025-06-16,3
+3,4,1,1,4.0,4.0,Breakfast,Block-C,Quantity was sufficient but food was cold,2026-05-24,2
+2,1,4,1,3.0,1.0,Dinner,Block-A,Food was tasty and hygienic,2025-07-14,2
+1,3,2,3,2.0,5.0,Dinner,Block-D,Too much waiting time,2026-06-01,2
+3,3,1,2,5.0,2.0,Lunch,Block-C,Clean environment but average taste,2026-03-17,2
+1,2,5,2,1.0,5.0,Breakfast,Block-B,Clean environment but average taste,2025-08-26,2
+1,5,5,1,2.0,1.0,Dinner,Block-A,Food was cold,2025-08-25,3
+3,4,4,5,1.0,3.0,Dinner,Block-D,Food was cold,2026-03-11,4
+1,1,5,4,1.0,2.0,Dinner,Block-D,Food was cold,2025-10-24,3
+4,5,5,1,5.0,2.0,Dinner,Block-B,Taste needs improvement,2026-03-03,4
+2,3,1,1,5.0,3.0,Lunch,Block-A,Dinner quality has improved recently,2026-01-25,2
+5,3,2,3,5.0,3.0,Dinner,Block-C,Fresh food and clean dining area,2026-06-02,3
+1,2,3,5,5.0,,Breakfast,Block-C,Rice was undercooked,2025-12-13,3
+1,3,4,1,2.0,3.0,Lunch,Block-A,Food was cold,2026-05-04,2
+4,2,1,2,2.0,5.0,Breakfast,Block-B,Good service but poor cleanliness,2026-04-18,2
+2,4,2,3,2.0,2.0,Breakfast,Block-C,Food was tasty and hygienic,2026-05-19,3
+4,3,4,1,1.0,2.0,Lunch,Block-A,Quantity was sufficient but food was cold,2025-09-07,3
+2,2,3,3,5.0,2.0,Breakfast,Block-C,Food was tasty but quantity was less,2025-09-27,2
+5,5,3,4,3.0,5.0,Lunch,Block-C,Fresh food and clean dining area,2025-10-15,4
+5,4,1,2,4.0,4.0,Lunch,Block-C,Too much waiting time,2025-08-23,3
+2,5,5,3,3.0,4.0,Dinner,Block-D,Very good service today,2025-11-28,4
+3,2,4,5,2.0,3.0,Breakfast,Block-C,Quantity was sufficient but food was cold,2026-02-02,4
+1,2,1,2,5.0,3.0,Breakfast,Block-B,Food was tasty and hygienic,2025-07-03,2
+4,4,4,4,2.0,5.0,Lunch,Block-B,Good quantity and excellent taste,2025-06-28,4
+4,4,1,1,1.0,4.0,Dinner,Block-A,Fresh food and clean dining area,2025-07-03,2
+1,2,5,4,3.0,4.0,Dinner,Block-A,Dinner quality has improved recently,2025-12-21,3
+2,2,3,2,5.0,2.0,Dinner,Block-B,Quantity was sufficient but food was cold,2025-08-24,2
+3,5,3,5,1.0,2.0,Dinner,Block-A,Dinner quality has improved recently,2026-04-20,4
+1,1,5,1,3.0,4.0,Breakfast,Block-A,Good quantity and excellent taste,2025-11-18,2
+3,1,3,2,3.0,3.0,Breakfast,Block-C,Food was tasty but quantity was less,2026-02-16,2
+3,2,4,3,5.0,3.0,Lunch,Block-B,Very good service today,2025-07-29,3
+2,2,3,5,5.0,4.0,Lunch,Block-B,Food was tasty but quantity was less,2026-02-04,3
+4,2,5,3,3.0,5.0,Breakfast,Block-C,Very good service today,2025-08-17,4
+4,5,5,3,1.0,3.0,Breakfast,Block-C,Taste needs improvement,2025-12-22,4
+5,3,4,3,1.0,5.0,Lunch,Block-C,Clean environment but average taste,2025-08-06,4
+4,2,5,5,3.0,1.0,Dinner,Block-D,Food was cold,2026-04-05,4
+5,1,1,3,5.0,4.0,Dinner,Block-D,Too much waiting time,2025-10-26,2
+5,2,3,4,5.0,5.0,Dinner,Block-C,Clean environment but average taste,2026-03-28,4
+2,4,2,5,5.0,3.0,Breakfast,Block-B,Taste needs improvement,2026-02-21,3
+4,3,5,1,2.0,3.0,Breakfast,Block-B,Quantity was sufficient but food was cold,2026-02-07,3
+2,3,1,2,2.0,2.0,Breakfast,Block-B,Too much waiting time,2025-07-07,2
+3,5,4,2,3.0,3.0,Breakfast,Block-A,Fresh food and clean dining area,2025-09-01,4
+5,3,1,5,2.0,4.0,Lunch,Block-C,Good service but poor cleanliness,2026-05-25,4
+3,1,1,3,2.0,1.0,Lunch,Block-B,Food was tasty but quantity was less,2026-05-17,2
+3,1,3,4,1.0,2.0,Dinner,Block-C,Too much waiting time,2025-11-19,3
+1,4,3,1,5.0,4.0,Dinner,Block-B,Good service but poor cleanliness,2025-10-21,2
+4,3,2,3,5.0,5.0,Lunch,Block-D,Dinner quality has improved recently,2026-03-02,3
+3,2,1,2,4.0,3.0,Dinner,Block-D,Food was tasty but quantity was less,2026-05-11,2
+1,5,5,2,2.0,3.0,Breakfast,Block-B,Clean environment but average taste,2025-11-06,3
+5,2,1,3,3.0,2.0,Lunch,Block-A,Quantity was sufficient but food was cold,2025-06-20,3
+1,1,1,1,3.0,1.0,Lunch,Block-C,Very good service today,2026-02-06,1
+1,1,1,5,1.0,5.0,Dinner,Block-D,Rice was undercooked,2025-07-19,2
+5,4,3,4,2.0,1.0,Dinner,Block-B,Good quantity and excellent taste,2025-07-06,4
+2,5,2,1,,5.0,Dinner,Block-C,Dinner quality has improved recently,2025-08-06,2
+5,4,5,1,2.0,3.0,Lunch,Block-B,Dinner quality has improved recently,2025-09-18,4
+3,4,5,1,3.0,5.0,Lunch,Block-A,Quantity was sufficient but food was cold,2025-09-24,3
+4,5,2,5,4.0,3.0,Breakfast,Block-A,Mess area was not clean,2025-07-23,4
+3,1,5,2,3.0,4.0,Lunch,Block-D,Mess area was not clean,2025-08-29,3
+1,5,5,2,1.0,3.0,Lunch,Block-A,Mess area was not clean,2025-10-17,3
+5,1,4,2,3.0,1.0,Dinner,Block-B,Mess area was not clean,2026-01-11,3
+2,3,2,1,5.0,2.0,Breakfast,Block-C,Fresh food and clean dining area,2025-08-16,2
+1,2,2,4,1.0,3.0,Breakfast,Block-B,Too much waiting time,2025-11-17,2
+3,2,1,4,2.0,4.0,Dinner,Block-D,Dinner quality has improved recently,2025-06-19,2
+3,2,5,1,5.0,2.0,Dinner,Block-A,Taste needs improvement,2025-06-13,3
+5,3,1,5,4.0,4.0,Lunch,Block-B,Quantity was sufficient but food was cold,2026-03-22,4
+4,5,2,2,4.0,1.0,Lunch,Block-B,Quantity was sufficient but food was cold,2025-11-29,3
+2,1,5,2,5.0,,Dinner,Block-C,Very good service today,2026-04-27,2
+4,1,1,3,1.0,,Lunch,Block-B,Dinner quality has improved recently,2025-09-14,2
+3,3,2,1,5.0,5.0,Lunch,Block-B,Fresh food and clean dining area,2026-05-28,2
+1,1,3,3,1.0,3.0,Lunch,Block-A,Rice was undercooked,2025-08-24,2
+2,3,1,2,4.0,1.0,Lunch,Block-B,Fresh food and clean dining area,2026-05-28,2
+2,4,1,1,4.0,5.0,Breakfast,Block-C,Dinner quality has improved recently,2025-10-04,2
+4,5,2,5,5.0,3.0,Dinner,Block-C,Too much waiting time,2025-12-24,4
+1,2,1,5,5.0,3.0,Dinner,Block-C,Food was cold,2025-11-22,2
+4,1,3,1,4.0,1.0,Breakfast,Block-B,Fresh food and clean dining area,2026-04-21,2
+4,3,2,3,5.0,2.0,Dinner,Block-C,Rice was undercooked,2026-01-16,3
+5,4,4,3,5.0,5.0,Dinner,Block-C,Fresh food and clean dining area,2025-09-13,4
+1,4,3,1,2.0,2.0,Dinner,Block-C,Quantity was sufficient but food was cold,2026-03-11,2
+5,2,3,5,2.0,2.0,Breakfast,Block-D,Good service but poor cleanliness,2025-08-05,4
+2,2,1,1,2.0,5.0,Lunch,Block-A,Rice was undercooked,2026-06-03,2
+2,1,5,2,4.0,4.0,Breakfast,Block-A,Quantity was sufficient but food was cold,2025-08-25,2
+1,5,5,3,4.0,5.0,Lunch,Block-D,Food was tasty but quantity was less,2025-11-22,4
+1,3,2,3,3.0,5.0,Lunch,Block-A,Food was tasty but quantity was less,2025-07-11,2
+2,4,1,2,5.0,4.0,Breakfast,Block-C,Taste needs improvement,2026-05-27,2
+2,3,2,4,5.0,2.0,Lunch,Block-D,Good service but poor cleanliness,2026-01-01,3
+4,1,2,1,2.0,2.0,Lunch,Block-A,Good service but poor cleanliness,2025-11-01,2
+1,1,5,3,2.0,4.0,Lunch,Block-A,Too much waiting time,2025-06-29,2
+5,2,4,1,3.0,4.0,Breakfast,Block-D,Good service but poor cleanliness,2025-12-05,3
+2,3,5,3,1.0,5.0,Dinner,Block-D,Quantity was sufficient but food was cold,2026-01-07,3
+3,3,4,2,3.0,2.0,Dinner,Block-B,Taste needs improvement,2025-07-12,3
+1,5,2,5,4.0,5.0,Breakfast,Block-B,Mess area was not clean,2025-07-05,3
+1,4,5,5,2.0,3.0,Lunch,Block-D,Fresh food and clean dining area,2026-01-06,4
+2,2,1,1,2.0,4.0,Dinner,Block-C,Quantity was sufficient but food was cold,2025-11-05,2
+3,1,5,2,2.0,1.0,Breakfast,Block-B,Clean environment but average taste,2025-06-07,3
+3,5,5,2,3.0,5.0,Lunch,Block-A,Food was cold,2025-08-05,4
+4,2,2,5,1.0,4.0,Dinner,Block-C,Quantity was sufficient but food was cold,2025-07-11,3
+4,4,5,1,3.0,5.0,Dinner,Block-C,Good quantity and excellent taste,2026-03-09,4
+2,4,3,1,5.0,4.0,Lunch,Block-C,Very good service today,2026-04-13,2
+4,5,3,2,5.0,5.0,Lunch,Block-B,Quantity was sufficient but food was cold,2025-10-05,4
+2,2,5,4,4.0,5.0,Dinner,Block-A,Too much waiting time,2026-01-20,3
+2,2,3,5,5.0,5.0,Lunch,Block-B,Dinner quality has improved recently,2025-07-14,3
+1,2,3,2,5.0,2.0,Breakfast,Block-D,Dinner quality has improved recently,2026-03-03,2
+5,5,4,2,3.0,4.0,Lunch,Block-B,Clean environment but average taste,2026-03-28,4
+4,3,1,4,4.0,3.0,Dinner,Block-B,Food was cold,2025-12-13,3
+1,3,3,1,3.0,3.0,Lunch,Block-B,Food was cold,2025-09-09,2
+4,2,3,1,3.0,4.0,Dinner,Block-B,Good quantity and excellent taste,2025-09-26,2
+3,2,1,1,5.0,5.0,Breakfast,Block-C,Fresh food and clean dining area,2026-01-25,2
+1,3,3,4,1.0,1.0,Dinner,Block-D,Too much waiting time,2026-05-11,3
+2,5,3,2,3.0,4.0,Dinner,Block-A,Fresh food and clean dining area,2025-08-25,3
+5,2,2,5,5.0,1.0,Breakfast,Block-D,Taste needs improvement,2026-03-01,4
+1,5,5,5,5.0,4.0,Dinner,Block-C,Taste needs improvement,2025-09-23,4
+4,2,2,2,2.0,2.0,Lunch,Block-D,Rice was undercooked,2025-08-31,2
+5,5,1,1,4.0,2.0,Dinner,Block-A,Food was tasty but quantity was less,2025-07-29,3
+4,4,4,4,3.0,3.0,Dinner,Block-B,Dinner quality has improved recently,2025-12-22,4
+5,2,4,3,1.0,2.0,Breakfast,Block-A,Rice was undercooked,2025-09-17,4
+1,4,2,4,4.0,3.0,Breakfast,Block-C,Too much waiting time,2025-12-27,3
+1,5,5,5,1.0,1.0,Breakfast,Block-B,Fresh food and clean dining area,2026-03-18,4
+2,4,3,1,,,Dinner,Block-A,Quantity was sufficient but food was cold,2025-11-04,2
+2,1,2,2,4.0,3.0,Lunch,Block-A,Very good service today,2025-10-10,2
+1,5,3,2,4.0,2.0,Lunch,Block-D,Mess area was not clean,2026-04-13,3
+5,3,3,3,1.0,4.0,Breakfast,Block-C,Food was tasty and hygienic,2025-09-28,4
+3,4,4,4,2.0,2.0,Dinner,Block-C,Dinner quality has improved recently,2026-01-22,4
+2,3,5,5,3.0,1.0,Dinner,Block-B,Food was cold,2026-03-28,4
+3,4,1,2,1.0,5.0,Breakfast,Block-D,Good service but poor cleanliness,2025-12-06,2
+3,3,2,5,5.0,4.0,Dinner,Block-D,Good service but poor cleanliness,2025-10-10,3
+1,2,4,1,3.0,2.0,Breakfast,Block-C,Very good service today,2025-09-21,2
+1,2,2,1,2.0,3.0,Dinner,Block-C,Food was tasty and hygienic,2025-08-26,2
+1,5,4,5,5.0,3.0,Lunch,Block-D,Too much waiting time,2025-09-14,4
+2,1,3,4,4.0,1.0,Dinner,Block-A,Good quantity and excellent taste,2026-04-18,2
+2,1,2,2,5.0,4.0,Dinner,Block-B,Too much waiting time,2025-07-07,2
+3,3,4,1,1.0,2.0,Lunch,Block-A,Very good service today,2025-09-23,3
+3,2,1,4,3.0,5.0,Breakfast,Block-B,Clean environment but average taste,2025-06-21,2
+5,3,5,2,,1.0,Lunch,Block-C,Clean environment but average taste,2026-03-26,4
+4,3,5,3,1.0,4.0,Dinner,Block-C,Food was cold,2025-07-25,4
+1,5,3,3,3.0,1.0,Lunch,Block-A,Good quantity and excellent taste,2025-11-30,3
+3,1,1,1,2.0,5.0,Lunch,Block-A,Quantity was sufficient but food was cold,2025-10-25,2
+1,5,1,3,1.0,4.0,Breakfast,Block-B,Dinner quality has improved recently,2025-10-05,2
+3,3,3,3,5.0,5.0,Breakfast,Block-D,Taste needs improvement,2026-02-18,3
+4,3,4,1,3.0,3.0,Lunch,Block-B,Good service but poor cleanliness,2026-05-09,3
+5,3,1,5,2.0,5.0,Lunch,Block-A,Very good service today,2026-01-13,4
+3,2,5,3,5.0,1.0,Dinner,Block-C,Taste needs improvement,2025-07-28,3
+3,3,2,4,3.0,4.0,Dinner,Block-A,Too much waiting time,2026-03-28,3
+3,5,4,5,5.0,2.0,Lunch,Block-B,Quantity was sufficient but food was cold,2025-09-09,4
+4,4,5,1,3.0,3.0,Lunch,Block-C,Very good service today,2025-10-13,4
+5,1,1,5,1.0,3.0,Dinner,Block-A,Food was tasty but quantity was less,2025-10-09,3
+4,1,2,5,2.0,5.0,Lunch,Block-D,Fresh food and clean dining area,2025-06-08,3
+2,3,1,1,2.0,1.0,Lunch,Block-B,Very good service today,2026-01-04,2
+2,1,2,2,2.0,5.0,Lunch,Block-B,Quantity was sufficient but food was cold,2025-07-16,2
+1,1,5,4,5.0,2.0,Lunch,Block-C,Dinner quality has improved recently,2025-06-19,3
+1,4,5,5,5.0,4.0,Breakfast,Block-A,Quantity was sufficient but food was cold,2025-08-21,4
+3,2,1,3,1.0,5.0,Lunch,Block-B,Food was tasty but quantity was less,2026-02-01,2
+5,4,3,5,2.0,3.0,Breakfast,Block-B,Good quantity and excellent taste,2026-04-12,4
+4,5,3,2,3.0,2.0,Breakfast,Block-C,Dinner quality has improved recently,2025-07-24,4
+2,4,2,3,5.0,5.0,Dinner,Block-A,Food was cold,2025-10-30,3
+3,1,3,1,2.0,4.0,Breakfast,Block-A,Good service but poor cleanliness,2026-04-04,2
+4,5,1,1,3.0,3.0,Lunch,Block-A,Mess area was not clean,2025-12-04,3
+5,5,3,1,4.0,3.0,Dinner,Block-C,Taste needs improvement,2025-10-10,4
+3,3,2,1,5.0,1.0,Dinner,Block-D,Good service but poor cleanliness,2026-03-21,2
+1,1,1,3,2.0,3.0,Breakfast,Block-D,Too much waiting time,2025-12-19,2
+3,2,1,2,2.0,2.0,Breakfast,Block-B,Taste needs improvement,2025-06-16,2
+5,5,1,2,4.0,2.0,Breakfast,Block-B,Food was tasty and hygienic,2026-01-04,3
+4,5,5,4,3.0,4.0,Lunch,Block-A,Clean environment but average taste,2025-08-01,4
+2,3,2,2,5.0,5.0,Breakfast,Block-A,Mess area was not clean,2025-12-28,2
+4,3,4,3,3.0,1.0,Lunch,Block-C,Dinner quality has improved recently,2025-12-08,4
+2,3,1,4,4.0,1.0,Breakfast,Block-D,Rice was undercooked,2025-11-27,2
+3,1,4,5,5.0,4.0,Breakfast,Block-B,Too much waiting time,2025-12-12,3
+2,1,5,2,4.0,5.0,Lunch,Block-A,Quantity was sufficient but food was cold,2025-10-13,2
+5,5,1,4,3.0,2.0,Lunch,Block-C,Food was tasty but quantity was less,2026-01-25,4
+2,5,3,4,3.0,4.0,Lunch,Block-D,Clean environment but average taste,2025-09-26,4
+1,1,1,4,4.0,1.0,Lunch,Block-D,Clean environment but average taste,2026-03-07,2
+4,3,4,4,4.0,5.0,Lunch,Block-C,Fresh food and clean dining area,2026-05-13,4
+5,5,5,4,1.0,3.0,Lunch,Block-A,Too much waiting time,2025-09-07,5
+5,4,1,5,5.0,3.0,Dinner,Block-B,Too much waiting time,2026-04-28,4
+5,5,3,2,5.0,2.0,Lunch,Block-D,Too much waiting time,2026-02-22,4
+5,4,2,1,1.0,2.0,Breakfast,Block-B,Food was tasty and hygienic,2026-05-25,3
+2,3,4,3,3.0,1.0,Lunch,Block-B,Dinner quality has improved recently,2025-08-31,3
+1,3,5,2,4.0,4.0,Dinner,Block-A,Rice was undercooked,2025-06-18,3
+1,5,3,3,5.0,,Dinner,Block-B,Dinner quality has improved recently,2025-08-21,3
+1,2,4,4,1.0,2.0,Lunch,Block-A,Rice was undercooked,2025-10-06,3
+5,1,4,4,3.0,5.0,Dinner,Block-C,Food was tasty but quantity was less,2026-05-09,4
+2,2,5,4,2.0,5.0,Dinner,Block-C,Food was cold,2025-09-07,3
+3,2,2,1,4.0,3.0,Dinner,Block-B,Good service but poor cleanliness,2025-06-30,2
+4,4,5,2,4.0,5.0,Lunch,Block-C,Quantity was sufficient but food was cold,2025-08-28,4
+1,1,2,4,2.0,4.0,Dinner,Block-B,Fresh food and clean dining area,2026-02-22,2
+3,5,3,4,5.0,1.0,Lunch,Block-D,Fresh food and clean dining area,2025-06-17,4
+1,1,4,5,4.0,5.0,Dinner,Block-A,Food was cold,2025-09-03,3
+4,5,4,2,4.0,5.0,Lunch,Block-A,Fresh food and clean dining area,2025-12-24,4
+4,5,4,1,5.0,5.0,Lunch,Block-B,Mess area was not clean,2026-03-19,4
+1,5,3,2,3.0,3.0,Breakfast,Block-C,Clean environment but average taste,2026-03-31,3
+1,1,3,3,1.0,1.0,Lunch,Block-A,Good service but poor cleanliness,2025-10-14,2
+1,5,3,2,4.0,4.0,Breakfast,Block-B,Clean environment but average taste,2025-09-10,3
+4,5,5,2,5.0,1.0,Breakfast,Block-B,Taste needs improvement,2026-02-17,4
+5,2,4,3,3.0,1.0,Lunch,Block-D,Good quantity and excellent taste,2025-10-08,4
+3,4,3,1,3.0,1.0,Dinner,Block-A,Dinner quality has improved recently,2025-07-09,3
+3,2,5,3,,,Lunch,Block-C,Quantity was sufficient but food was cold,2026-03-27,3
+5,3,3,5,5.0,3.0,Dinner,Block-A,Rice was undercooked,2025-08-06,4
+3,1,4,2,5.0,3.0,Lunch,Block-A,Food was tasty but quantity was less,2026-01-02,2
+1,4,4,4,4.0,1.0,Dinner,Block-B,Good quantity and excellent taste,2025-10-16,3
+1,4,5,2,5.0,2.0,Breakfast,Block-A,Very good service today,2025-08-16,3
+3,4,5,1,1.0,4.0,Dinner,Block-A,Fresh food and clean dining area,2025-08-19,3
+4,5,4,4,4.0,2.0,Lunch,Block-B,Clean environment but average taste,2026-01-13,4
+1,3,5,5,5.0,4.0,Breakfast,Block-B,Taste needs improvement,2026-02-12,4
+1,5,2,2,1.0,5.0,Breakfast,Block-D,Food was tasty and hygienic,2026-01-26,2
+1,1,4,2,2.0,5.0,Breakfast,Block-D,Too much waiting time,2025-11-05,2
+4,1,2,4,5.0,1.0,Dinner,Block-D,Taste needs improvement,2025-10-12,3
+4,1,4,3,3.0,3.0,Lunch,Block-D,Fresh food and clean dining area,2025-07-11,3
+5,2,3,5,1.0,4.0,Lunch,Block-B,Food was tasty but quantity was less,2026-03-22,4
+5,5,2,3,,4.0,Dinner,Block-D,Quantity was sufficient but food was cold,2025-06-13,4
+3,2,1,4,1.0,5.0,Lunch,Block-B,Taste needs improvement,2026-03-30,2
+5,4,2,1,3.0,4.0,Lunch,Block-B,Quantity was sufficient but food was cold,2025-07-21,3
+1,1,1,5,1.0,4.0,Lunch,Block-D,Mess area was not clean,2026-02-13,2
+4,1,5,2,4.0,5.0,Lunch,Block-B,Good quantity and excellent taste,2025-09-17,3
+1,4,5,3,5.0,1.0,Dinner,Block-B,Dinner quality has improved recently,2025-08-26,3
+2,3,4,4,3.0,2.0,Dinner,Block-A,Quantity was sufficient but food was cold,2026-04-23,3
+1,5,3,1,2.0,5.0,Dinner,Block-C,Good service but poor cleanliness,2025-06-27,2
+1,3,3,4,4.0,4.0,Dinner,Block-D,Mess area was not clean,2025-09-28,3
+3,1,3,2,3.0,3.0,Dinner,Block-A,Clean environment but average taste,2025-09-27,2
+1,2,1,5,2.0,3.0,Dinner,Block-A,Food was tasty and hygienic,2025-07-26,2
+4,2,1,2,3.0,2.0,Lunch,Block-D,Fresh food and clean dining area,2025-09-17,2
+2,5,5,2,3.0,4.0,Breakfast,Block-D,Food was cold,2025-09-07,4
+1,1,5,5,5.0,4.0,Lunch,Block-C,Good service but poor cleanliness,2025-07-12,3
+4,4,5,4,5.0,5.0,Lunch,Block-C,Fresh food and clean dining area,2025-08-02,4
+1,2,2,5,4.0,1.0,Breakfast,Block-C,Too much waiting time,2025-07-20,2
+4,1,5,4,5.0,4.0,Dinner,Block-C,Very good service today,2026-03-11,4
+3,1,4,2,3.0,5.0,Breakfast,Block-A,Too much waiting time,2025-09-02,2
+2,2,5,5,5.0,5.0,Breakfast,Block-C,Fresh food and clean dining area,2025-07-15,4
+3,4,2,3,3.0,1.0,Lunch,Block-D,Food was tasty and hygienic,2025-12-13,3
+2,1,2,2,1.0,4.0,Breakfast,Block-D,Fresh food and clean dining area,2026-02-18,2
+2,1,2,1,1.0,2.0,Breakfast,Block-C,Quantity was sufficient but food was cold,2025-06-15,2
+1,3,5,2,4.0,1.0,Breakfast,Block-D,Food was tasty and hygienic,2025-08-28,3
+3,5,3,3,3.0,3.0,Dinner,Block-A,Food was tasty but quantity was less,2025-09-20,4
+4,1,2,1,3.0,3.0,Dinner,Block-A,Dinner quality has improved recently,2025-11-10,2
+5,2,3,5,4.0,2.0,Lunch,Block-B,Clean environment but average taste,2025-12-05,4
+3,2,5,2,3.0,4.0,Dinner,Block-C,Too much waiting time,2025-10-24,3
+1,1,5,5,4.0,3.0,Lunch,Block-A,Too much waiting time,2025-08-11,3
+3,1,3,4,1.0,1.0,Dinner,Block-A,Fresh food and clean dining area,2025-10-31,3
+1,5,2,5,3.0,4.0,Dinner,Block-C,Food was tasty and hygienic,2025-09-30,3
+5,1,3,2,5.0,4.0,Breakfast,Block-C,Food was cold,2025-11-15,3
+4,1,3,2,4.0,1.0,Lunch,Block-B,Food was tasty but quantity was less,2025-08-20,2
+5,1,4,3,5.0,3.0,Lunch,Block-A,Mess area was not clean,2026-03-11,3
+5,3,3,4,1.0,5.0,Lunch,Block-B,Very good service today,2025-07-13,4
+5,3,3,4,2.0,1.0,Lunch,Block-B,Dinner quality has improved recently,2026-01-27,4
+5,4,5,3,3.0,1.0,Lunch,Block-A,Clean environment but average taste,2025-08-07,4
+5,3,4,4,5.0,2.0,Breakfast,Block-A,Dinner quality has improved recently,2025-06-08,4
+1,4,3,5,5.0,4.0,Lunch,Block-C,Mess area was not clean,2026-04-07,3
+1,1,3,5,2.0,3.0,Dinner,Block-C,Good quantity and excellent taste,2026-02-06,2
+2,3,1,2,3.0,3.0,Dinner,Block-C,Quantity was sufficient but food was cold,2025-11-17,2
+4,3,5,1,1.0,4.0,Breakfast,Block-D,Too much waiting time,2025-11-30,3
+1,4,5,5,5.0,1.0,Dinner,Block-C,Mess area was not clean,2025-12-01,4
+3,2,4,1,3.0,5.0,Dinner,Block-B,Mess area was not clean,2025-06-23,2
+2,5,3,2,5.0,1.0,Lunch,Block-C,Food was tasty and hygienic,2025-07-30,3
+5,3,1,5,1.0,3.0,Lunch,Block-A,Very good service today,2025-12-27,4
+5,4,2,4,3.0,,Lunch,Block-D,Dinner quality has improved recently,2025-08-22,4
+1,5,2,2,4.0,5.0,Dinner,Block-D,Food was cold,2026-05-28,2
+1,3,1,3,5.0,,Breakfast,Block-B,Taste needs improvement,2026-03-28,2
+5,5,4,1,4.0,5.0,Breakfast,Block-D,Mess area was not clean,2025-08-21,4
+4,1,3,1,5.0,2.0,Breakfast,Block-B,Very good service today,2026-02-08,2
+4,1,4,1,4.0,3.0,Lunch,Block-C,Quantity was sufficient but food was cold,2025-06-21,2
+1,1,3,2,3.0,1.0,Breakfast,Block-D,Good service but poor cleanliness,2025-08-10,2
+2,2,2,1,2.0,,Dinner,Block-D,Too much waiting time,2025-12-07,2
+1,4,5,2,1.0,5.0,Lunch,Block-C,Very good service today,2026-03-03,3
+5,2,2,2,4.0,5.0,Lunch,Block-D,Quantity was sufficient but food was cold,2026-05-20,3
+4,1,2,2,4.0,5.0,Breakfast,Block-C,Rice was undercooked,2026-03-09,2
+2,4,3,2,,3.0,Breakfast,Block-B,Food was cold,2026-01-18,3
+5,4,4,5,5.0,5.0,Lunch,Block-D,Dinner quality has improved recently,2025-12-11,4
+1,2,5,4,5.0,2.0,Lunch,Block-C,Food was tasty but quantity was less,2026-06-02,3
+1,5,4,1,4.0,5.0,Dinner,Block-A,Too much waiting time,2025-08-17,3
+5,5,2,2,2.0,1.0,Breakfast,Block-B,Taste needs improvement,2025-07-06,4
+1,3,4,2,1.0,3.0,Breakfast,Block-B,Clean environment but average taste,2025-11-20,2
+5,5,5,5,1.0,1.0,Dinner,Block-A,Dinner quality has improved recently,2026-04-12,5
+3,1,2,5,1.0,,Breakfast,Block-C,Too much waiting time,2025-06-17,3
+1,1,1,5,3.0,2.0,Dinner,Block-A,Clean environment but average taste,2025-08-19,2
+3,5,3,5,2.0,5.0,Lunch,Block-C,Too much waiting time,2026-02-23,4
+1,2,3,4,,3.0,Breakfast,Block-C,Taste needs improvement,2026-03-21,2
+1,3,1,3,1.0,1.0,Lunch,Block-B,Taste needs improvement,2026-01-18,2
+1,2,2,5,3.0,2.0,Dinner,Block-D,Quantity was sufficient but food was cold,2026-03-17,2
+2,5,3,1,2.0,2.0,Breakfast,Block-D,Food was cold,2026-03-18,3
+4,3,4,5,4.0,3.0,Breakfast,Block-B,Good quantity and excellent taste,2025-10-26,4
+4,5,3,3,4.0,1.0,Lunch,Block-C,Very good service today,2026-03-04,4
+2,4,3,2,5.0,2.0,Breakfast,Block-B,Good service but poor cleanliness,2025-11-15,3
+2,2,3,5,5.0,4.0,Breakfast,Block-B,Rice was undercooked,2026-02-15,3
+5,4,3,5,3.0,5.0,Breakfast,Block-B,Food was cold,2026-03-09,4
+3,5,1,2,2.0,3.0,Breakfast,Block-A,Good quantity and excellent taste,2026-04-01,3
+1,3,4,1,1.0,1.0,Dinner,Block-A,Good service but poor cleanliness,2025-06-07,2
+2,4,1,4,5.0,1.0,Dinner,Block-B,Quantity was sufficient but food was cold,2026-01-12,3
+2,2,2,3,5.0,4.0,Lunch,Block-D,Mess area was not clean,2026-01-15,2
+1,4,2,4,4.0,2.0,Dinner,Block-D,Rice was undercooked,2025-12-25,3
+1,1,1,2,5.0,1.0,Breakfast,Block-C,Clean environment but average taste,2025-12-08,1
+1,1,1,1,1.0,2.0,Lunch,Block-A,Very good service today,2025-08-21,1
+3,5,3,1,1.0,2.0,Lunch,Block-A,Fresh food and clean dining area,2025-06-28,3
+1,3,3,4,1.0,2.0,Lunch,Block-D,Quantity was sufficient but food was cold,2025-09-23,3
+4,2,1,1,2.0,2.0,Breakfast,Block-D,Quantity was sufficient but food was cold,2025-10-24,2
+5,5,5,1,,3.0,Lunch,Block-B,Good quantity and excellent taste,2026-04-15,4
+1,1,2,1,4.0,5.0,Lunch,Block-A,Mess area was not clean,2026-02-07,1
+4,5,2,1,5.0,3.0,Lunch,Block-C,Food was cold,2026-03-14,3
+3,2,5,5,4.0,4.0,Breakfast,Block-A,Good quantity and excellent taste,2026-01-26,4
+3,4,1,5,4.0,4.0,Dinner,Block-D,Too much waiting time,2026-01-25,3
+3,4,5,4,5.0,3.0,Dinner,Block-D,Taste needs improvement,2026-01-13,4
+1,1,2,2,2.0,1.0,Breakfast,Block-D,Quantity was sufficient but food was cold,2025-10-30,2
+2,2,3,3,5.0,,Dinner,Block-A,Food was tasty but quantity was less,2026-01-25,2
+1,5,1,4,4.0,4.0,Lunch,Block-C,Food was tasty and hygienic,2025-09-09,3
+2,1,5,4,,3.0,Breakfast,Block-A,Food was cold,2025-10-27,3
+2,4,3,4,2.0,5.0,Breakfast,Block-C,Quantity was sufficient but food was cold,2026-01-13,3
+1,4,5,1,4.0,4.0,Lunch,Block-B,Too much waiting time,2025-10-28,3
+1,5,2,1,2.0,2.0,Dinner,Block-B,Taste needs improvement,2026-01-17,2
+2,1,4,5,4.0,3.0,Dinner,Block-C,Very good service today,2026-02-15,3
+1,3,3,4,5.0,5.0,Dinner,Block-B,Too much waiting time,2025-10-08,3
+3,5,4,4,1.0,2.0,Breakfast,Block-C,Rice was undercooked,2025-10-08,4
+3,5,3,3,1.0,1.0,Breakfast,Block-D,Good service but poor cleanliness,2025-09-12,4
+3,2,5,5,2.0,2.0,Dinner,Block-D,Mess area was not clean,2025-07-27,4
+2,3,2,5,3.0,5.0,Lunch,Block-A,Food was tasty and hygienic,2026-04-06,3
+1,3,4,1,,4.0,Lunch,Block-C,Taste needs improvement,2025-09-29,2
+2,4,3,1,5.0,2.0,Lunch,Block-D,Food was tasty but quantity was less,2025-08-11,2
+4,4,4,3,4.0,3.0,Breakfast,Block-C,Dinner quality has improved recently,2025-07-23,4
+1,3,1,3,5.0,4.0,Lunch,Block-D,Food was tasty but quantity was less,2025-09-07,2
+2,4,5,2,5.0,,Lunch,Block-D,Taste needs improvement,2026-02-24,3
+3,5,1,2,4.0,1.0,Dinner,Block-B,Mess area was not clean,2026-03-31,3
+1,3,4,5,2.0,2.0,Lunch,Block-A,Dinner quality has improved recently,2025-06-22,3
+2,1,1,1,3.0,5.0,Lunch,Block-B,Food was tasty and hygienic,2026-01-29,1
+3,1,2,2,3.0,3.0,Lunch,Block-D,Good service but poor cleanliness,2026-03-20,2
+1,1,5,5,4.0,2.0,Dinner,Block-A,Good quantity and excellent taste,2026-01-11,3
+5,5,5,3,5.0,4.0,Lunch,Block-C,Food was cold,2025-08-22,4
+3,1,2,2,5.0,2.0,Breakfast,Block-A,Food was cold,2026-04-08,2
+2,4,4,2,5.0,4.0,Breakfast,Block-D,Food was cold,2025-11-09,3
+3,2,2,2,1.0,1.0,Lunch,Block-B,Dinner quality has improved recently,2025-11-04,2
+2,1,3,1,4.0,4.0,Breakfast,Block-B,Mess area was not clean,2026-04-09,2
+4,3,2,5,3.0,4.0,Lunch,Block-D,Food was tasty but quantity was less,2025-07-02,4
+1,4,1,4,4.0,2.0,Breakfast,Block-A,Good service but poor cleanliness,2025-09-12,2
+4,4,1,2,5.0,3.0,Dinner,Block-C,Rice was undercooked,2026-04-18,3
+5,1,1,2,2.0,1.0,Dinner,Block-B,Rice was undercooked,2025-10-22,2
+5,2,4,3,2.0,4.0,Breakfast,Block-D,Rice was undercooked,2025-07-07,4
+4,4,1,4,5.0,,Breakfast,Block-B,Quantity was sufficient but food was cold,2026-03-18,3
+3,1,4,2,4.0,3.0,Lunch,Block-B,Good quantity and excellent taste,2025-11-10,2
+1,5,5,4,2.0,3.0,Lunch,Block-B,Food was cold,2025-09-15,4
+3,5,2,2,4.0,2.0,Dinner,Block-D,Good service but poor cleanliness,2025-12-18,3
+4,1,5,2,4.0,4.0,Breakfast,Block-B,Taste needs improvement,2026-02-26,3
+3,5,1,2,2.0,5.0,Dinner,Block-A,Too much waiting time,2026-03-11,3
+3,2,2,2,5.0,2.0,Dinner,Block-A,Taste needs improvement,2026-04-12,2
+1,5,4,5,1.0,5.0,Dinner,Block-B,Food was tasty and hygienic,2026-02-01,4
+4,1,5,2,1.0,1.0,Dinner,Block-C,Good quantity and excellent taste,2026-05-20,3
+2,5,1,4,4.0,2.0,Breakfast,Block-B,Very good service today,2026-05-30,3
+4,5,1,4,4.0,4.0,Lunch,Block-C,Fresh food and clean dining area,2026-02-06,4
+2,1,3,3,3.0,,Lunch,Block-D,Mess area was not clean,2025-07-03,2
+2,4,4,1,4.0,2.0,Lunch,Block-A,Food was cold,2026-02-28,3
+5,1,1,3,2.0,3.0,Dinner,Block-A,Food was tasty but quantity was less,2025-06-28,2
+5,4,5,4,5.0,1.0,Breakfast,Block-B,Good service but poor cleanliness,2025-11-15,4
+3,4,5,3,2.0,4.0,Breakfast,Block-C,Food was tasty and hygienic,2026-02-20,4
+3,1,4,5,1.0,,Breakfast,Block-C,Quantity was sufficient but food was cold,2025-11-24,3
+1,1,3,4,4.0,3.0,Dinner,Block-A,Rice was undercooked,2026-04-10,2
+1,5,3,5,5.0,2.0,Lunch,Block-C,Fresh food and clean dining area,2026-04-09,4
+4,4,5,4,2.0,4.0,Lunch,Block-B,Rice was undercooked,2026-02-11,4
+5,5,2,3,2.0,3.0,Lunch,Block-A,Fresh food and clean dining area,2026-03-05,4
+4,1,4,4,2.0,2.0,Dinner,Block-D,Clean environment but average taste,2025-10-24,3
+3,4,5,4,1.0,3.0,Breakfast,Block-A,Rice was undercooked,2025-08-28,4
+1,4,2,3,5.0,3.0,Dinner,Block-C,Taste needs improvement,2025-11-01,2
+5,5,5,1,1.0,3.0,Lunch,Block-D,Dinner quality has improved recently,2026-01-19,4
+5,1,4,5,3.0,3.0,Dinner,Block-C,Fresh food and clean dining area,2026-03-10,4
+2,1,1,2,3.0,5.0,Breakfast,Block-B,Taste needs improvement,2025-06-30,2
+3,5,5,1,3.0,4.0,Dinner,Block-A,Food was cold,2026-04-14,4
+3,2,4,2,1.0,4.0,Dinner,Block-A,Mess area was not clean,2025-10-22,3
+1,2,2,2,2.0,3.0,Dinner,Block-B,Fresh food and clean dining area,2026-01-13,2
+4,2,4,5,3.0,4.0,Lunch,Block-B,Clean environment but average taste,2025-08-21,4
+2,4,5,5,2.0,3.0,Dinner,Block-C,Good service but poor cleanliness,2025-12-21,4
+3,5,5,5,4.0,1.0,Lunch,Block-A,Taste needs improvement,2025-11-18,4
+1,4,1,5,1.0,3.0,Lunch,Block-C,Quantity was sufficient but food was cold,2025-12-12,3
+3,2,5,3,5.0,3.0,Lunch,Block-B,Taste needs improvement,2025-07-09,3
+2,1,4,2,5.0,1.0,Dinner,Block-C,Rice was undercooked,2025-11-02,2
+3,3,3,4,5.0,2.0,Dinner,Block-B,Clean environment but average taste,2025-11-27,3
+1,3,1,5,3.0,2.0,Lunch,Block-C,Good quantity and excellent taste,2026-04-22,2
+3,3,2,3,5.0,5.0,Lunch,Block-C,Food was cold,2025-09-13,3
+2,5,1,5,4.0,3.0,Lunch,Block-C,Clean environment but average taste,2026-05-18,3
+3,4,3,5,4.0,4.0,Lunch,Block-D,Rice was undercooked,2025-06-28,4
+3,3,1,4,4.0,4.0,Lunch,Block-D,Mess area was not clean,2025-11-02,3
+1,2,3,3,2.0,5.0,Breakfast,Block-D,Rice was undercooked,2025-06-04,2
+2,2,1,3,4.0,3.0,Breakfast,Block-D,Good quantity and excellent taste,2025-12-12,2
+2,5,4,1,2.0,2.0,Dinner,Block-C,Rice was undercooked,2025-11-10,3
+5,1,1,3,4.0,4.0,Breakfast,Block-A,Quantity was sufficient but food was cold,2025-11-01,2
+5,4,5,4,,4.0,Breakfast,Block-B,Very good service today,2025-09-16,4
+5,2,5,4,3.0,2.0,Dinner,Block-D,Rice was undercooked,2025-10-28,4
+2,5,3,3,3.0,2.0,Breakfast,Block-D,Good service but poor cleanliness,2025-11-02,3
+5,3,1,4,2.0,3.0,Breakfast,Block-C,Too much waiting time,2025-07-13,3
+4,3,5,5,2.0,1.0,Dinner,Block-B,Clean environment but average taste,2026-02-20,4
+1,3,4,1,3.0,4.0,Dinner,Block-A,Good service but poor cleanliness,2026-05-02,2
+1,1,2,5,1.0,2.0,Lunch,Block-B,Clean environment but average taste,2025-11-05,2
+3,4,1,4,2.0,2.0,Dinner,Block-A,Mess area was not clean,2025-10-25,3
+1,4,5,1,5.0,4.0,Lunch,Block-B,Quantity was sufficient but food was cold,2025-06-05,3
+4,4,2,4,4.0,2.0,Breakfast,Block-A,Very good service today,2026-05-14,4
+4,4,3,4,2.0,2.0,Dinner,Block-C,Good quantity and excellent taste,2025-12-18,4
+4,3,5,2,4.0,4.0,Breakfast,Block-A,Food was tasty and hygienic,2026-01-17,4
+2,2,2,1,4.0,2.0,Lunch,Block-A,Good service but poor cleanliness,2026-05-09,2
+1,1,3,4,2.0,4.0,Breakfast,Block-D,Taste needs improvement,2026-03-30,2
+4,4,2,5,5.0,4.0,Dinner,Block-B,Quantity was sufficient but food was cold,2026-02-06,4
+1,4,1,2,2.0,1.0,Lunch,Block-D,Dinner quality has improved recently,2025-12-23,2
+3,5,3,3,3.0,5.0,Dinner,Block-B,Mess area was not clean,2026-03-02,4
+1,1,2,3,1.0,4.0,Dinner,Block-D,Good service but poor cleanliness,2026-01-28,2
+1,5,5,3,2.0,4.0,Dinner,Block-D,Food was cold,2025-12-11,4
+3,1,5,3,3.0,2.0,Lunch,Block-A,Good service but poor cleanliness,2025-12-11,3
+5,4,5,4,2.0,5.0,Lunch,Block-C,Fresh food and clean dining area,2025-09-01,4
+5,5,2,1,4.0,4.0,Dinner,Block-D,Good quantity and excellent taste,2025-07-10,3
+5,1,4,4,,3.0,Breakfast,Block-B,Clean environment but average taste,2025-09-09,4
+1,5,1,5,2.0,4.0,Lunch,Block-D,Good service but poor cleanliness,2026-03-16,3
+1,5,2,3,1.0,4.0,Breakfast,Block-A,Quantity was sufficient but food was cold,2025-09-12,3
+4,4,3,2,2.0,4.0,Breakfast,Block-A,Food was cold,2025-09-28,3
+1,1,1,5,4.0,2.0,Dinner,Block-A,Dinner quality has improved recently,2026-05-10,2
+2,4,2,1,1.0,5.0,Breakfast,Block-B,Good service but poor cleanliness,2025-11-26,2
+3,2,5,2,1.0,1.0,Breakfast,Block-C,Food was tasty and hygienic,2025-11-08,3
+5,4,3,4,2.0,1.0,Dinner,Block-D,Food was cold,2025-12-09,4
+1,1,4,2,3.0,4.0,Lunch,Block-D,Very good service today,2025-12-24,2
+3,2,4,4,5.0,2.0,Lunch,Block-B,Fresh food and clean dining area,2025-10-28,3
+4,3,2,3,3.0,3.0,Dinner,Block-D,Clean environment but average taste,2025-11-30,3
+3,5,2,4,3.0,1.0,Dinner,Block-A,Fresh food and clean dining area,2025-06-03,4
+2,2,3,1,4.0,4.0,Lunch,Block-C,Food was tasty and hygienic,2026-03-13,2
+5,3,4,3,3.0,2.0,Breakfast,Block-D,Dinner quality has improved recently,2026-04-27,4
+1,2,3,5,4.0,3.0,Breakfast,Block-C,Good quantity and excellent taste,2026-02-24,3
+4,3,1,2,2.0,5.0,Lunch,Block-B,Mess area was not clean,2025-12-24,2
+4,3,3,2,5.0,5.0,Breakfast,Block-B,Food was tasty and hygienic,2025-07-24,3
+3,3,4,4,5.0,5.0,Lunch,Block-B,Food was tasty and hygienic,2026-05-31,4
+2,2,5,4,3.0,3.0,Dinner,Block-A,Rice was undercooked,2026-04-20,3
+3,4,4,2,2.0,4.0,Breakfast,Block-A,Rice was undercooked,2026-05-02,3
+5,2,2,4,3.0,1.0,Lunch,Block-B,Food was cold,2025-11-17,3
+4,4,5,1,1.0,2.0,Lunch,Block-B,Too much waiting time,2025-06-08,4
+3,5,4,1,5.0,5.0,Lunch,Block-D,Dinner quality has improved recently,2026-05-12,3
+4,4,4,2,4.0,3.0,Lunch,Block-A,Fresh food and clean dining area,2026-02-18,4
+2,4,1,5,1.0,1.0,Lunch,Block-D,Too much waiting time,2025-09-11,3
+4,2,4,3,2.0,3.0,Breakfast,Block-C,Clean environment but average taste,2026-02-09,3
+4,5,5,4,3.0,1.0,Dinner,Block-B,Fresh food and clean dining area,2025-08-20,4
+5,1,5,2,1.0,2.0,Dinner,Block-A,Fresh food and clean dining area,2025-08-14,3
+3,5,4,2,4.0,1.0,Lunch,Block-A,Taste needs improvement,2026-02-05,4
+3,2,3,4,3.0,4.0,Dinner,Block-B,Good service but poor cleanliness,2025-08-11,3
+5,2,2,3,,1.0,Breakfast,Block-A,Quantity was sufficient but food was cold,2026-03-24,3
+1,4,4,5,3.0,4.0,Dinner,Block-C,Good quantity and excellent taste,2025-09-17,4
+4,4,4,4,5.0,2.0,Dinner,Block-B,Clean environment but average taste,2025-10-27,4
+4,5,5,1,4.0,5.0,Lunch,Block-C,Taste needs improvement,2026-01-04,4
+2,4,3,5,4.0,1.0,Lunch,Block-C,Food was tasty but quantity was less,2026-03-06,4
+4,5,1,1,3.0,3.0,Lunch,Block-C,Food was tasty but quantity was less,2026-05-18,3
+2,2,3,1,4.0,1.0,Lunch,Block-B,Good quantity and excellent taste,2026-05-04,2
+1,4,5,4,5.0,3.0,Breakfast,Block-A,Clean environment but average taste,2025-11-16,4
+5,4,1,1,,5.0,Lunch,Block-A,Good quantity and excellent taste,2025-08-09,3
+1,1,3,1,4.0,5.0,Dinner,Block-B,Dinner quality has improved recently,2026-01-05,2
+5,1,4,5,3.0,5.0,Dinner,Block-A,Very good service today,2025-12-25,4
+3,4,5,5,1.0,2.0,Lunch,Block-B,Fresh food and clean dining area,2025-07-01,4
+2,1,2,5,4.0,2.0,Lunch,Block-A,Good service but poor cleanliness,2026-01-17,2
+4,3,4,3,1.0,2.0,Lunch,Block-D,Fresh food and clean dining area,2025-10-26,4
+4,2,2,2,2.0,1.0,Lunch,Block-D,Clean environment but average taste,2026-04-13,2
+5,1,4,1,2.0,5.0,Breakfast,Block-B,Food was cold,2026-02-08,3
+3,5,3,4,3.0,2.0,Lunch,Block-D,Very good service today,2025-06-15,4
+1,3,5,1,,2.0,Dinner,Block-C,Fresh food and clean dining area,2025-10-19,2
+5,5,1,5,5.0,4.0,Lunch,Block-D,Food was tasty and hygienic,2026-05-14,4
+1,1,1,4,5.0,4.0,Lunch,Block-A,Mess area was not clean,2025-06-19,2
+2,5,2,2,1.0,2.0,Dinner,Block-B,Good service but poor cleanliness,2025-12-11,3
+4,3,1,2,3.0,3.0,Breakfast,Block-D,Rice was undercooked,2026-03-03,2
+1,4,5,3,5.0,3.0,Dinner,Block-D,Clean environment but average taste,2025-06-13,3
+5,1,5,4,1.0,5.0,Lunch,Block-B,Quantity was sufficient but food was cold,2025-07-21,4
+1,3,3,1,1.0,5.0,Breakfast,Block-D,Rice was undercooked,2026-02-16,2
+3,2,5,2,4.0,,Breakfast,Block-A,Dinner quality has improved recently,2026-05-21,3
+2,3,5,3,4.0,5.0,Dinner,Block-D,Food was tasty but quantity was less,2025-08-02,3
+3,5,5,1,1.0,4.0,Lunch,Block-B,Fresh food and clean dining area,2026-05-25,4
+3,1,1,3,1.0,5.0,Breakfast,Block-A,Good service but poor cleanliness,2025-06-16,2
+5,5,2,4,2.0,3.0,Dinner,Block-A,Food was cold,2026-02-14,4
+2,2,3,1,5.0,,Dinner,Block-B,Mess area was not clean,2026-04-30,2
+5,5,2,4,5.0,5.0,Dinner,Block-D,Good quantity and excellent taste,2026-05-02,4
+2,4,3,5,3.0,3.0,Lunch,Block-A,Quantity was sufficient but food was cold,2025-12-19,4
+1,1,1,2,3.0,1.0,Dinner,Block-B,Food was tasty but quantity was less,2025-07-30,1
+4,5,1,4,5.0,1.0,Dinner,Block-D,Too much waiting time,2025-09-22,4
+1,4,1,5,2.0,2.0,Dinner,Block-A,Good service but poor cleanliness,2026-04-25,3
+3,4,4,4,2.0,5.0,Breakfast,Block-D,Fresh food and clean dining area,2026-01-20,4
+1,3,1,4,1.0,1.0,Dinner,Block-D,Food was tasty but quantity was less,2025-10-23,2
+5,2,2,4,4.0,1.0,Dinner,Block-D,Good quantity and excellent taste,2025-12-23,3
+3,4,3,2,5.0,1.0,Lunch,Block-C,Quantity was sufficient but food was cold,2026-01-21,3
+3,4,1,5,3.0,4.0,Lunch,Block-C,Food was tasty but quantity was less,2025-09-25,3
+2,2,2,2,1.0,2.0,Dinner,Block-C,Dinner quality has improved recently,2026-02-17,2
+2,5,1,3,1.0,4.0,Breakfast,Block-C,Dinner quality has improved recently,2026-02-07,3
+5,4,2,3,1.0,2.0,Lunch,Block-D,Mess area was not clean,2026-03-29,4
+3,5,4,2,3.0,4.0,Lunch,Block-D,Food was cold,2026-04-29,4
+1,1,4,4,2.0,5.0,Breakfast,Block-B,Mess area was not clean,2026-02-17,2
+4,2,4,3,4.0,5.0,Lunch,Block-C,Very good service today,2025-06-21,3
+4,4,4,5,,4.0,Breakfast,Block-B,Taste needs improvement,2025-12-21,4
+1,4,4,4,5.0,4.0,Dinner,Block-B,Dinner quality has improved recently,2026-01-23,3
+3,3,2,2,2.0,5.0,Dinner,Block-C,Clean environment but average taste,2025-11-30,2
+4,1,2,4,5.0,5.0,Dinner,Block-A,Food was tasty but quantity was less,2025-12-28,3
+2,1,1,2,3.0,1.0,Breakfast,Block-D,Too much waiting time,2026-05-06,2
+4,1,3,2,2.0,4.0,Breakfast,Block-D,Good service but poor cleanliness,2026-03-26,2
+4,2,3,5,1.0,1.0,Breakfast,Block-C,Too much waiting time,2025-08-22,4
+1,5,2,3,4.0,4.0,Lunch,Block-A,Good service but poor cleanliness,2026-05-22,3
+4,4,2,2,2.0,4.0,Lunch,Block-A,Rice was undercooked,2025-10-07,3
+4,4,5,3,3.0,2.0,Dinner,Block-B,Food was cold,2025-12-25,4
+4,2,2,2,4.0,5.0,Dinner,Block-B,Dinner quality has improved recently,2025-07-29,2
+1,3,1,2,2.0,1.0,Lunch,Block-C,Mess area was not clean,2026-05-13,2
+2,1,4,3,3.0,1.0,Dinner,Block-C,Food was tasty and hygienic,2025-07-24,2
+3,3,4,3,2.0,4.0,Dinner,Block-B,Fresh food and clean dining area,2025-12-25,3
+5,5,5,3,5.0,3.0,Dinner,Block-D,Food was tasty and hygienic,2025-07-22,4
+1,3,2,2,1.0,5.0,Dinner,Block-B,Food was tasty but quantity was less,2026-04-26,2
+3,2,2,1,1.0,5.0,Lunch,Block-B,Quantity was sufficient but food was cold,2025-06-29,2
+2,2,3,1,4.0,5.0,Dinner,Block-A,Mess area was not clean,2025-11-07,2
+1,2,3,2,2.0,,Breakfast,Block-C,Rice was undercooked,2026-01-03,2
+2,4,4,4,3.0,3.0,Lunch,Block-A,Fresh food and clean dining area,2025-11-24,4
+3,5,4,3,1.0,5.0,Breakfast,Block-B,Mess area was not clean,2026-01-30,4
+2,2,3,2,1.0,1.0,Lunch,Block-D,Food was tasty but quantity was less,2025-11-19,2
+4,1,2,3,2.0,4.0,Dinner,Block-B,Food was tasty and hygienic,2025-09-21,2
+1,1,5,2,2.0,5.0,Lunch,Block-A,Food was tasty and hygienic,2026-05-27,2
+4,4,4,2,1.0,1.0,Lunch,Block-C,Taste needs improvement,2025-08-21,4
+2,4,1,1,5.0,4.0,Breakfast,Block-C,Clean environment but average taste,2026-01-14,2
+3,4,4,4,5.0,2.0,Dinner,Block-B,Quantity was sufficient but food was cold,2026-04-19,4
+2,3,5,1,1.0,4.0,Lunch,Block-D,Very good service today,2026-04-25,3
+1,4,5,3,2.0,1.0,Breakfast,Block-D,Too much waiting time,2026-05-26,3
+2,2,5,5,3.0,4.0,Lunch,Block-B,Quantity was sufficient but food was cold,2025-07-27,4
+4,5,4,5,5.0,5.0,Lunch,Block-A,Food was tasty and hygienic,2026-02-28,4
+1,1,1,1,5.0,4.0,Lunch,Block-C,Mess area was not clean,2025-08-20,1
+4,2,1,4,4.0,4.0,Dinner,Block-C,Rice was undercooked,2025-12-31,3
+2,1,1,1,3.0,4.0,Lunch,Block-A,Rice was undercooked,2025-08-20,1
+2,4,2,2,,2.0,Lunch,Block-C,Food was tasty but quantity was less,2025-08-13,2
+4,2,1,5,5.0,1.0,Dinner,Block-C,Food was cold,2025-10-18,3
+2,5,1,3,2.0,3.0,Breakfast,Block-D,Quantity was sufficient but food was cold,2026-04-12,3
+5,1,4,2,4.0,5.0,Breakfast,Block-C,Mess area was not clean,2026-04-05,3
+1,1,3,3,3.0,1.0,Breakfast,Block-B,Good service but poor cleanliness,2026-01-08,2
+5,4,1,5,1.0,3.0,Dinner,Block-B,Food was tasty but quantity was less,2025-12-06,4
+3,3,2,4,1.0,4.0,Lunch,Block-A,Food was cold,2025-10-05,3
+4,5,4,5,2.0,4.0,Lunch,Block-A,Too much waiting time,2025-08-31,4
+1,4,5,5,5.0,4.0,Lunch,Block-C,Quantity was sufficient but food was cold,2025-09-21,4
+5,5,4,5,4.0,5.0,Breakfast,Block-D,Clean environment but average taste,2025-12-02,5
+2,2,4,3,3.0,5.0,Breakfast,Block-D,Fresh food and clean dining area,2026-04-02,3
+4,2,3,2,2.0,1.0,Breakfast,Block-C,Taste needs improvement,2025-10-05,3
+2,4,2,3,1.0,,Breakfast,Block-A,Food was tasty and hygienic,2026-04-30,3
+5,3,3,5,2.0,4.0,Breakfast,Block-C,Food was cold,2026-05-20,4
+5,2,5,4,3.0,5.0,Dinner,Block-C,Food was tasty and hygienic,2025-11-15,4
+4,2,1,1,1.0,3.0,Dinner,Block-C,Rice was undercooked,2025-11-05,2
+4,2,4,3,5.0,2.0,Lunch,Block-B,Food was tasty but quantity was less,2025-11-30,3
+1,1,5,5,4.0,3.0,Lunch,Block-C,Very good service today,2026-02-09,3
+1,2,4,2,2.0,5.0,Dinner,Block-A,Quantity was sufficient but food was cold,2025-06-05,2
+5,5,2,1,1.0,4.0,Lunch,Block-A,Good quantity and excellent taste,2025-11-26,3
+2,1,5,1,3.0,1.0,Dinner,Block-A,Rice was undercooked,2026-04-05,2
+4,2,2,4,4.0,3.0,Breakfast,Block-C,Taste needs improvement,2026-03-27,3
+4,2,4,5,2.0,4.0,Breakfast,Block-A,Quantity was sufficient but food was cold,2025-07-05,4
+4,5,3,4,5.0,5.0,Dinner,Block-D,Good service but poor cleanliness,2025-11-24,4
+1,3,3,5,4.0,4.0,Lunch,Block-A,Very good service today,2025-10-31,3
+4,1,3,3,2.0,2.0,Lunch,Block-C,Food was tasty but quantity was less,2026-04-13,3
+3,2,4,1,1.0,5.0,Breakfast,Block-C,Good quantity and excellent taste,2025-06-03,2
+4,1,1,4,3.0,5.0,Dinner,Block-B,Mess area was not clean,2025-06-25,2
+1,1,1,4,3.0,1.0,Lunch,Block-B,Taste needs improvement,2025-07-03,2
+3,3,4,1,2.0,4.0,Breakfast,Block-B,Mess area was not clean,2025-08-23,3
+1,2,4,1,2.0,1.0,Dinner,Block-C,Food was tasty but quantity was less,2025-12-10,2
+5,4,1,1,4.0,1.0,Lunch,Block-C,Dinner quality has improved recently,2025-07-16,3
+2,2,4,2,5.0,2.0,Dinner,Block-C,Too much waiting time,2026-01-15,2
+4,3,1,2,3.0,5.0,Dinner,Block-B,Food was tasty but quantity was less,2025-09-19,2
+5,4,3,2,3.0,3.0,Dinner,Block-C,Good service but poor cleanliness,2025-06-24,4
+4,3,2,3,1.0,2.0,Dinner,Block-D,Fresh food and clean dining area,2025-06-20,3
+5,3,4,2,3.0,3.0,Lunch,Block-D,Very good service today,2025-06-18,4
+4,4,2,1,4.0,2.0,Dinner,Block-A,Food was tasty but quantity was less,2025-10-23,3
+2,2,4,1,2.0,4.0,Dinner,Block-A,Too much waiting time,2025-06-30,2
+3,1,5,3,4.0,3.0,Breakfast,Block-C,Very good service today,2025-12-26,3
+3,3,5,3,5.0,1.0,Breakfast,Block-A,Food was cold,2025-10-14,4
+3,3,2,2,4.0,2.0,Breakfast,Block-A,Fresh food and clean dining area,2025-10-01,2
+2,3,5,1,1.0,2.0,Dinner,Block-B,Food was cold,2025-08-14,3
+2,2,2,2,3.0,1.0,Dinner,Block-B,Quantity was sufficient but food was cold,2025-09-20,2
+5,2,1,1,5.0,,Dinner,Block-A,Quantity was sufficient but food was cold,2025-10-18,2
+3,3,2,4,5.0,5.0,Dinner,Block-A,Dinner quality has improved recently,2025-08-22,3
+3,1,3,3,2.0,5.0,Breakfast,Block-D,Rice was undercooked,2025-10-19,2
+4,5,1,3,3.0,5.0,Breakfast,Block-A,Good quantity and excellent taste,2025-06-23,3
+2,2,5,1,4.0,5.0,Dinner,Block-C,Quantity was sufficient but food was cold,2026-03-25,2
+3,5,1,2,4.0,5.0,Breakfast,Block-A,Rice was undercooked,2026-06-01,3
+1,5,2,2,3.0,4.0,Dinner,Block-A,Good quantity and excellent taste,2025-09-06,2
+1,3,3,4,2.0,3.0,Lunch,Block-C,Fresh food and clean dining area,2026-04-09,3
+5,4,4,1,1.0,3.0,Breakfast,Block-B,Food was tasty and hygienic,2026-04-26,4
+3,1,5,5,4.0,5.0,Breakfast,Block-C,Dinner quality has improved recently,2025-12-14,4
+2,3,4,2,5.0,4.0,Dinner,Block-D,Food was tasty and hygienic,2025-06-09,3
+4,4,2,1,3.0,1.0,Lunch,Block-C,Fresh food and clean dining area,2026-02-21,3
+1,5,5,3,3.0,1.0,Breakfast,Block-C,Taste needs improvement,2025-07-19,4
+4,5,4,3,4.0,1.0,Breakfast,Block-D,Good service but poor cleanliness,2025-11-26,4
+2,2,3,1,1.0,2.0,Lunch,Block-B,Fresh food and clean dining area,2026-01-19,2
+3,2,2,4,2.0,5.0,Dinner,Block-D,Dinner quality has improved recently,2026-04-30,3
+4,5,2,5,1.0,1.0,Dinner,Block-A,Fresh food and clean dining area,2026-03-16,4
+4,3,4,2,2.0,2.0,Lunch,Block-B,Taste needs improvement,2025-11-09,3
+5,1,2,5,3.0,1.0,Lunch,Block-B,Taste needs improvement,2025-10-04,3
+3,1,1,4,5.0,2.0,Dinner,Block-C,Food was tasty and hygienic,2025-12-05,2
+3,1,5,3,2.0,4.0,Dinner,Block-D,Good service but poor cleanliness,2025-09-22,3
+2,1,5,5,2.0,4.0,Dinner,Block-C,Too much waiting time,2026-05-29,3
+2,4,5,4,5.0,3.0,Lunch,Block-A,Rice was undercooked,2025-07-19,4
+2,1,2,2,2.0,3.0,Dinner,Block-A,Taste needs improvement,2025-08-29,2
+1,5,4,2,4.0,4.0,Dinner,Block-B,Rice was undercooked,2025-10-23,3
+3,5,3,2,2.0,4.0,Breakfast,Block-A,Food was cold,2026-04-27,3
+2,2,2,3,4.0,1.0,Dinner,Block-B,Too much waiting time,2026-05-03,2
+3,5,1,3,3.0,3.0,Breakfast,Block-D,Rice was undercooked,2025-09-11,3
+5,4,1,4,,2.0,Lunch,Block-D,Taste needs improvement,2025-11-17,4
+3,2,1,3,3.0,1.0,Breakfast,Block-C,Mess area was not clean,2025-06-29,2
+3,5,5,5,2.0,1.0,Breakfast,Block-D,Good quantity and excellent taste,2026-01-06,4
+2,2,1,3,1.0,5.0,Lunch,Block-D,Dinner quality has improved recently,2025-08-08,2
+3,2,4,5,2.0,4.0,Breakfast,Block-A,Quantity was sufficient but food was cold,2025-08-23,4
+4,3,2,5,2.0,1.0,Lunch,Block-B,Food was tasty and hygienic,2025-11-04,4
+1,2,2,3,2.0,4.0,Dinner,Block-C,Good service but poor cleanliness,2026-05-20,2
+3,3,5,4,2.0,1.0,Dinner,Block-C,Rice was undercooked,2025-08-22,4
+4,2,1,3,4.0,5.0,Breakfast,Block-B,Good quantity and excellent taste,2026-03-13,2
+1,3,3,2,5.0,3.0,Lunch,Block-D,Taste needs improvement,2025-12-22,2
+2,5,4,2,3.0,2.0,Dinner,Block-D,Clean environment but average taste,2025-12-24,3
+2,5,1,3,2.0,4.0,Breakfast,Block-B,Dinner quality has improved recently,2026-05-16,3
+5,2,5,4,1.0,5.0,Lunch,Block-A,Food was cold,2025-10-29,4
+2,4,5,3,4.0,1.0,Lunch,Block-B,Food was cold,2025-12-15,4
+1,4,1,3,2.0,5.0,Breakfast,Block-B,Very good service today,2025-11-07,2
+1,2,1,2,2.0,1.0,Dinner,Block-D,Rice was undercooked,2026-05-26,2
+5,3,2,4,4.0,2.0,Breakfast,Block-D,Taste needs improvement,2026-03-11,4
+5,1,4,2,1.0,5.0,Lunch,Block-D,Too much waiting time,2026-02-20,3
+3,1,4,2,1.0,2.0,Dinner,Block-A,Fresh food and clean dining area,2026-01-24,2
+1,1,2,3,4.0,2.0,Breakfast,Block-D,Food was cold,2026-05-04,2
+5,4,1,1,3.0,1.0,Breakfast,Block-D,Dinner quality has improved recently,2025-06-22,3
+3,5,5,1,3.0,5.0,Lunch,Block-B,Dinner quality has improved recently,2025-09-16,4
+3,2,2,4,2.0,3.0,Lunch,Block-B,Clean environment but average taste,2025-06-12,3
+3,2,4,1,3.0,4.0,Dinner,Block-D,Taste needs improvement,2025-07-25,2
+3,3,5,2,4.0,5.0,Breakfast,Block-B,Food was tasty but quantity was less,2025-07-28,3
+1,5,1,2,3.0,4.0,Lunch,Block-B,Very good service today,2025-07-25,2
+1,3,4,1,4.0,3.0,Lunch,Block-D,Food was tasty but quantity was less,2025-12-01,2
+1,1,4,5,3.0,4.0,Breakfast,Block-D,Good service but poor cleanliness,2026-03-16,3
+5,1,3,4,3.0,4.0,Dinner,Block-C,Food was tasty but quantity was less,2025-07-21,3
+5,4,1,1,2.0,4.0,Dinner,Block-D,Good quantity and excellent taste,2025-07-16,3
+4,3,2,5,3.0,1.0,Dinner,Block-A,Good service but poor cleanliness,2025-12-19,4
+1,2,1,1,2.0,4.0,Lunch,Block-D,Food was tasty but quantity was less,2026-01-25,1
+3,3,4,5,3.0,1.0,Breakfast,Block-C,Dinner quality has improved recently,2025-12-01,4
+1,3,1,1,3.0,5.0,Lunch,Block-B,Quantity was sufficient but food was cold,2026-04-24,2
+5,5,4,1,2.0,1.0,Breakfast,Block-A,Quantity was sufficient but food was cold,2025-07-05,4
+4,5,2,3,5.0,1.0,Lunch,Block-B,Good quantity and excellent taste,2025-12-03,4
+1,1,5,1,4.0,1.0,Lunch,Block-D,Fresh food and clean dining area,2025-08-22,2
+2,5,4,2,5.0,1.0,Dinner,Block-D,Food was tasty and hygienic,2025-11-14,3
+1,3,5,2,4.0,5.0,Dinner,Block-B,Food was cold,2026-04-29,3
+4,5,2,3,5.0,2.0,Dinner,Block-B,Fresh food and clean dining area,2026-02-16,4
+5,4,1,5,3.0,1.0,Dinner,Block-A,Food was tasty and hygienic,2026-02-20,4
+4,4,1,5,2.0,1.0,Breakfast,Block-D,Dinner quality has improved recently,2026-04-16,4
+5,1,3,5,4.0,1.0,Breakfast,Block-A,Clean environment but average taste,2026-04-19,4
+2,4,1,4,1.0,3.0,Breakfast,Block-A,Mess area was not clean,2025-06-28,3
+3,5,3,4,2.0,5.0,Lunch,Block-A,Too much waiting time,2026-04-14,4
+2,4,3,2,4.0,3.0,Lunch,Block-C,Too much waiting time,2025-08-23,3
+3,2,4,2,4.0,3.0,Dinner,Block-B,Clean environment but average taste,2025-12-10,3
+1,4,3,2,2.0,5.0,Lunch,Block-D,Very good service today,2026-04-11,2
+4,1,4,3,4.0,,Dinner,Block-B,Fresh food and clean dining area,2026-03-11,3
+3,1,5,3,2.0,2.0,Dinner,Block-B,Food was cold,2025-10-28,3
+3,1,3,5,4.0,4.0,Dinner,Block-D,Mess area was not clean,2025-07-30,3
+1,5,2,1,5.0,4.0,Dinner,Block-A,Taste needs improvement,2026-04-28,2
+5,5,4,3,3.0,4.0,Dinner,Block-D,Quantity was sufficient but food was cold,2025-12-20,4
+3,1,1,1,3.0,5.0,Breakfast,Block-A,Mess area was not clean,2026-04-02,2
+3,2,1,1,2.0,5.0,Lunch,Block-D,Too much waiting time,2025-10-30,2
+1,2,4,2,5.0,4.0,Breakfast,Block-C,Good quantity and excellent taste,2026-01-28,2
+1,4,4,2,,1.0,Breakfast,Block-D,Food was cold,2026-01-06,3
+1,2,3,1,5.0,1.0,Lunch,Block-C,Good service but poor cleanliness,2025-06-30,2
+1,2,4,5,2.0,1.0,Dinner,Block-A,Food was tasty but quantity was less,2025-06-26,3
+5,5,4,3,2.0,3.0,Lunch,Block-D,Quantity was sufficient but food was cold,2026-01-30,4
+5,2,1,3,5.0,4.0,Breakfast,Block-D,Too much waiting time,2026-02-16,3
+4,3,5,1,3.0,1.0,Lunch,Block-D,Food was cold,2025-09-18,3
+2,4,4,5,,4.0,Lunch,Block-B,Very good service today,2026-04-14,4
+5,3,2,5,3.0,5.0,Dinner,Block-D,Taste needs improvement,2026-04-11,4
+3,1,3,5,2.0,4.0,Lunch,Block-D,Rice was undercooked,2025-12-02,3
+3,3,5,4,2.0,4.0,Breakfast,Block-B,Clean environment but average taste,2026-02-28,4
+4,4,1,1,1.0,5.0,Dinner,Block-D,Good service but poor cleanliness,2026-04-22,2
+2,4,4,2,2.0,5.0,Dinner,Block-D,Food was cold,2025-11-13,3
+1,2,5,3,1.0,5.0,Lunch,Block-B,Food was tasty and hygienic,2026-03-05,3
+1,4,4,2,1.0,3.0,Breakfast,Block-B,Rice was undercooked,2026-04-22,3
+1,5,5,4,1.0,4.0,Breakfast,Block-D,Rice was undercooked,2026-03-17,4
+1,2,5,5,1.0,2.0,Breakfast,Block-A,Food was tasty and hygienic,2026-01-31,3
+3,2,5,3,1.0,1.0,Lunch,Block-D,Food was tasty and hygienic,2026-02-20,3
+4,3,1,1,2.0,2.0,Breakfast,Block-B,Rice was undercooked,2026-04-12,2
+3,4,1,5,3.0,5.0,Lunch,Block-C,Rice was undercooked,2025-09-01,3
+3,4,1,4,4.0,2.0,Lunch,Block-A,Dinner quality has improved recently,2025-06-24,3
+2,1,4,5,4.0,1.0,Lunch,Block-B,Clean environment but average taste,2026-01-14,3
+5,5,2,4,1.0,,Dinner,Block-D,Rice was undercooked,2026-01-12,4
+4,4,3,3,5.0,3.0,Lunch,Block-D,Quantity was sufficient but food was cold,2025-10-16,4
+3,3,2,3,5.0,2.0,Lunch,Block-C,Food was tasty but quantity was less,2026-03-21,3
+5,1,3,1,1.0,2.0,Lunch,Block-C,Food was tasty but quantity was less,2025-12-31,2
+2,2,5,4,5.0,1.0,Breakfast,Block-B,Quantity was sufficient but food was cold,2025-06-21,3
+2,5,1,5,3.0,,Dinner,Block-B,Rice was undercooked,2025-07-02,3
+5,1,2,5,2.0,5.0,Breakfast,Block-B,Good service but poor cleanliness,2026-06-03,3
+5,1,3,3,1.0,5.0,Dinner,Block-C,Food was tasty and hygienic,2025-09-03,3
+3,2,3,2,4.0,3.0,Breakfast,Block-A,Too much waiting time,2026-02-19,2
+5,3,3,1,3.0,2.0,Lunch,Block-D,Too much waiting time,2025-09-27,3
+5,2,5,3,3.0,1.0,Dinner,Block-B,Quantity was sufficient but food was cold,2025-09-08,4
+3,5,4,2,4.0,2.0,Lunch,Block-C,Clean environment but average taste,2025-07-04,4
+2,2,2,4,5.0,2.0,Dinner,Block-A,Good quantity and excellent taste,2026-01-30,2
+1,5,3,1,3.0,2.0,Lunch,Block-C,Food was tasty but quantity was less,2026-02-18,2
+2,3,3,5,5.0,3.0,Lunch,Block-B,Dinner quality has improved recently,2026-03-29,3
+4,3,5,5,4.0,1.0,Breakfast,Block-A,Clean environment but average taste,2026-05-30,4
+2,5,2,4,2.0,1.0,Lunch,Block-C,Rice was undercooked,2026-01-29,3
+2,5,3,5,2.0,2.0,Lunch,Block-C,Food was tasty and hygienic,2025-08-27,4
+5,2,3,1,1.0,3.0,Lunch,Block-C,Too much waiting time,2026-01-09,3
+4,5,4,5,3.0,4.0,Lunch,Block-C,Good service but poor cleanliness,2025-10-29,4
+1,4,3,5,4.0,2.0,Breakfast,Block-C,Rice was undercooked,2025-06-16,3
+3,1,5,5,2.0,3.0,Dinner,Block-B,Very good service today,2025-07-12,4
+4,4,5,5,2.0,2.0,Lunch,Block-A,Quantity was sufficient but food was cold,2026-05-10,4
+3,2,3,3,4.0,3.0,Dinner,Block-C,Food was tasty and hygienic,2025-10-20,3
+1,2,2,3,2.0,2.0,Breakfast,Block-D,Clean environment but average taste,2026-04-27,2
+1,5,4,1,1.0,4.0,Lunch,Block-D,Good service but poor cleanliness,2025-07-04,3
+3,2,1,2,2.0,2.0,Lunch,Block-D,Mess area was not clean,2025-06-23,2
+4,4,1,5,2.0,5.0,Lunch,Block-A,Very good service today,2025-10-23,4
+2,4,3,5,1.0,3.0,Breakfast,Block-C,Quantity was sufficient but food was cold,2025-07-15,4
+4,2,3,3,3.0,5.0,Dinner,Block-D,Good quantity and excellent taste,2025-10-20,3
+2,5,3,3,1.0,2.0,Dinner,Block-C,Quantity was sufficient but food was cold,2025-12-06,3
+5,5,4,4,1.0,4.0,Lunch,Block-B,Food was tasty and hygienic,2025-11-02,4
+5,5,2,2,4.0,2.0,Breakfast,Block-B,Dinner quality has improved recently,2025-08-11,4
+4,4,5,2,4.0,3.0,Breakfast,Block-C,Food was tasty and hygienic,2025-11-12,4
+1,1,2,1,3.0,4.0,Dinner,Block-C,Food was tasty and hygienic,2025-12-08,1
+5,5,2,5,5.0,4.0,Dinner,Block-C,Good quantity and excellent taste,2026-05-28,4
+2,1,2,1,3.0,2.0,Breakfast,Block-B,Fresh food and clean dining area,2025-08-26,2
+3,5,5,1,2.0,5.0,Breakfast,Block-D,Food was tasty but quantity was less,2026-04-19,4
+1,5,2,4,2.0,1.0,Dinner,Block-D,Rice was undercooked,2026-02-07,3
+1,4,3,1,4.0,5.0,Lunch,Block-B,Good quantity and excellent taste,2026-02-02,2
+1,1,1,5,5.0,5.0,Lunch,Block-B,Food was tasty and hygienic,2025-06-13,2
+2,1,1,2,1.0,5.0,Dinner,Block-B,Taste needs improvement,2025-07-13,2
+1,5,5,2,4.0,2.0,Dinner,Block-C,Rice was undercooked,2026-03-08,3
+4,3,1,1,5.0,5.0,Lunch,Block-A,Very good service today,2026-02-28,2
+1,5,1,4,2.0,5.0,Dinner,Block-A,Dinner quality has improved recently,2025-06-19,3
+1,3,3,3,4.0,1.0,Lunch,Block-D,Taste needs improvement,2026-03-06,2
+4,1,1,2,3.0,3.0,Lunch,Block-A,Food was tasty but quantity was less,2025-07-03,2
+1,1,2,2,5.0,2.0,Breakfast,Block-D,Mess area was not clean,2025-07-04,2
+4,1,4,1,5.0,1.0,Dinner,Block-A,Clean environment but average taste,2026-06-03,2
+2,2,1,2,3.0,5.0,Dinner,Block-C,Food was tasty but quantity was less,2026-01-26,2
+2,1,5,4,2.0,3.0,Lunch,Block-C,Taste needs improvement,2026-05-21,3
+3,1,2,4,4.0,3.0,Lunch,Block-C,Good quantity and excellent taste,2025-11-06,2
+5,4,5,2,3.0,4.0,Lunch,Block-C,Good quantity and excellent taste,2026-04-03,4
+4,2,5,5,1.0,3.0,Breakfast,Block-D,Fresh food and clean dining area,2026-04-16,4
+2,2,4,2,4.0,3.0,Dinner,Block-A,Fresh food and clean dining area,2025-06-07,2
+4,1,4,1,2.0,4.0,Lunch,Block-A,Good quantity and excellent taste,2025-09-18,2
+4,4,3,1,4.0,1.0,Dinner,Block-A,Food was tasty and hygienic,2026-05-06,3
+3,1,3,2,2.0,3.0,Breakfast,Block-C,Fresh food and clean dining area,2026-01-12,2
+4,4,4,5,2.0,3.0,Breakfast,Block-A,Clean environment but average taste,2026-01-24,4
+5,4,2,2,2.0,3.0,Dinner,Block-D,Very good service today,2025-06-21,3
+3,1,1,4,2.0,2.0,Breakfast,Block-C,Good service but poor cleanliness,2026-04-26,2
+4,2,4,1,5.0,3.0,Lunch,Block-D,Food was tasty and hygienic,2026-03-25,3
+2,1,1,2,1.0,3.0,Lunch,Block-D,Dinner quality has improved recently,2026-02-06,2
+1,1,1,4,3.0,1.0,Lunch,Block-C,Very good service today,2025-08-27,2
+2,3,4,5,2.0,3.0,Lunch,Block-A,Quantity was sufficient but food was cold,2025-09-27,4
+2,2,1,4,5.0,3.0,Lunch,Block-A,Taste needs improvement,2025-07-04,2
+2,4,4,2,2.0,2.0,Breakfast,Block-B,Quantity was sufficient but food was cold,2026-03-29,3
+2,1,4,2,4.0,2.0,Breakfast,Block-B,Mess area was not clean,2025-08-12,2
+5,1,1,2,1.0,4.0,Dinner,Block-D,Mess area was not clean,2025-07-11,2
+2,5,5,1,4.0,5.0,Dinner,Block-D,Very good service today,2025-06-13,3
+1,4,3,3,3.0,2.0,Breakfast,Block-B,Rice was undercooked,2026-05-10,3
+3,5,4,4,1.0,4.0,Breakfast,Block-B,Too much waiting time,2026-02-09,4
+3,2,2,1,1.0,4.0,Lunch,Block-B,Food was tasty but quantity was less,2025-12-09,2
+5,3,1,4,3.0,1.0,Breakfast,Block-B,Good quantity and excellent taste,2025-11-26,3
+4,2,3,2,1.0,2.0,Breakfast,Block-B,Good quantity and excellent taste,2025-07-02,3
+2,3,4,5,3.0,3.0,Breakfast,Block-B,Mess area was not clean,2025-10-04,4
+4,4,5,4,4.0,2.0,Lunch,Block-B,Quantity was sufficient but food was cold,2025-11-19,4
+1,4,5,4,1.0,4.0,Lunch,Block-A,Good quantity and excellent taste,2025-10-09,4
+1,1,2,2,5.0,2.0,Dinner,Block-B,Very good service today,2026-05-12,2
+5,3,3,1,5.0,4.0,Lunch,Block-A,Very good service today,2026-02-27,3
+1,2,4,5,5.0,1.0,Breakfast,Block-D,Food was tasty and hygienic,2026-01-04,3
+1,4,4,1,5.0,1.0,Dinner,Block-A,Quantity was sufficient but food was cold,2026-03-17,2
+4,5,2,5,4.0,5.0,Lunch,Block-D,Very good service today,2026-02-02,4
+1,3,3,1,5.0,4.0,Breakfast,Block-D,Mess area was not clean,2026-01-16,2
+5,4,4,4,4.0,3.0,Dinner,Block-B,Food was tasty but quantity was less,2026-01-02,4
+2,3,5,3,2.0,4.0,Lunch,Block-B,Dinner quality has improved recently,2025-10-05,3
+2,3,1,5,4.0,2.0,Lunch,Block-D,Fresh food and clean dining area,2025-07-29,3
+1,2,4,3,5.0,1.0,Dinner,Block-D,Food was tasty and hygienic,2025-06-28,2
+2,3,5,3,4.0,3.0,Breakfast,Block-D,Too much waiting time,2025-06-29,3
+1,5,2,3,1.0,1.0,Breakfast,Block-A,Food was tasty and hygienic,2025-07-14,3
+1,4,3,2,5.0,2.0,Lunch,Block-B,Food was tasty and hygienic,2025-09-06,2
+2,3,1,2,5.0,3.0,Dinner,Block-A,Taste needs improvement,2025-11-06,2
+3,5,2,2,3.0,2.0,Lunch,Block-B,Food was tasty and hygienic,2025-06-26,3
+3,5,3,4,3.0,5.0,Lunch,Block-C,Food was tasty but quantity was less,2025-12-22,4
+2,1,1,1,4.0,2.0,Lunch,Block-A,Fresh food and clean dining area,2025-07-12,1
+3,2,2,5,4.0,3.0,Dinner,Block-D,Good service but poor cleanliness,2026-04-19,3
+2,3,5,2,4.0,5.0,Breakfast,Block-A,Clean environment but average taste,2025-07-12,3
+5,2,4,5,3.0,3.0,Dinner,Block-A,Clean environment but average taste,2025-07-21,4
+4,3,1,5,4.0,2.0,Breakfast,Block-C,Fresh food and clean dining area,2026-04-11,3
+5,4,1,2,4.0,4.0,Breakfast,Block-A,Dinner quality has improved recently,2025-12-01,3
+3,3,3,3,3.0,5.0,Lunch,Block-C,Mess area was not clean,2025-07-17,3
+4,1,3,5,2.0,5.0,Breakfast,Block-B,Rice was undercooked,2026-05-19,3
+3,4,3,4,5.0,2.0,Dinner,Block-D,Rice was undercooked,2025-11-23,4
+2,2,5,2,1.0,5.0,Lunch,Block-B,Mess area was not clean,2025-10-25,3
+4,2,5,2,2.0,2.0,Breakfast,Block-C,Food was tasty but quantity was less,2025-06-09,3
+2,4,2,5,,3.0,Lunch,Block-B,Dinner quality has improved recently,2026-05-08,3
+3,4,5,4,2.0,5.0,Lunch,Block-B,Good quantity and excellent taste,2026-03-13,4
+2,2,4,5,4.0,4.0,Lunch,Block-C,Dinner quality has improved recently,2026-03-16,3
+3,5,5,4,4.0,3.0,Breakfast,Block-A,Very good service today,2026-04-30,4
+3,3,1,5,4.0,5.0,Breakfast,Block-D,Very good service today,2026-02-14,3
+1,1,2,3,4.0,5.0,Lunch,Block-B,Taste needs improvement,2026-03-22,2
+1,3,2,3,4.0,1.0,Breakfast,Block-A,Clean environment but average taste,2026-04-22,2
+3,2,3,2,4.0,2.0,Lunch,Block-B,Mess area was not clean,2025-10-24,2
+2,4,5,4,5.0,2.0,Lunch,Block-A,Good quantity and excellent taste,2025-08-22,4
+5,5,4,1,3.0,4.0,Breakfast,Block-D,Mess area was not clean,2026-03-24,4
+5,1,3,5,4.0,1.0,Lunch,Block-D,Dinner quality has improved recently,2025-10-28,4
+5,5,1,2,5.0,2.0,Lunch,Block-D,Clean environment but average taste,2025-11-12,3
+5,4,5,3,1.0,1.0,Lunch,Block-D,Food was tasty and hygienic,2026-02-23,4
+5,1,1,1,1.0,4.0,Breakfast,Block-B,Good quantity and excellent taste,2026-01-21,2
+3,5,2,1,4.0,1.0,Dinner,Block-B,Too much waiting time,2025-06-24,3
+4,2,4,1,4.0,4.0,Dinner,Block-B,Clean environment but average taste,2026-03-02,3
