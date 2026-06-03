@@ -17,7 +17,7 @@ print("\nMissing Values:")
 print(data.isnull().sum())
 
 # Remove missing values if any
-data = data.dropna()
+data = data.fillna(data.median(numeric_only=True))
 
 # Features and target
 X = data[['food_quality', 'cleanliness', 'quantity', 'taste']]
