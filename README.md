@@ -1,28 +1,66 @@
-## Problem Statement
-Mess food quality varies daily, and students often face inconsistency in food quality, cleanliness, and taste.
+**Mess Food Feedback Analyzer**
 
-## Objective
-To analyze and predict mess food ratings using machine learning based on different factors.
+- **Purpose:** Analyze and predict mess food ratings using simple machine learning and visualize feedback trends.
+- **Status:** Minimal proof-of-concept (data-driven analysis + linear regression model).
 
-## Features Used
-- Food Quality
-- Cleanliness
-- Quantity
-- Taste
+**Quick Links**
+- **Code:** [model/train_model.py](model/train_model.py)
+- **Analysis plot:** [analysis.py](analysis.py)
 
-## Model Used
-Linear Regression
+**Features**
+- **Input factors:** `food_quality`, `cleanliness`, `quantity`, `taste`
+- **Model:** Linear Regression (scikit-learn)
+- **Visualization:** Average feature bar chart (matplotlib)
 
-## How to Run
-1. Install dependencies:
-   pip install pandas scikit-learn matplotlib
+**Requirements**
+- Python 3.8+
+- See `requirements.txt` for exact packages.
 
-2. Run training:
-   python model/train_model.py
+**Quick Start**
+1. Create a virtual environment (recommended):
 
-3. Run analysis:
-   python analysis.py
+```bash
+python -m venv .venv
+source .venv/Scripts/activate   # Windows: .venv\Scripts\activate
+```
 
-## Output
-- Model predicts rating based on inputs
-- Graph visualization of feedback
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Train the model (this saves a model file in `model/`):
+
+```bash
+python model/train_model.py
+```
+
+4. Run analysis plot (shows an average-rating bar chart):
+
+```bash
+python analysis.py
+```
+
+**Dataset**
+- Place your CSV at `data/mess_data.csv`. Expected columns (case-sensitive):
+
+```
+food_quality,cleanliness,quantity,taste,rating
+```
+
+**Project Layout**
+- `analysis.py`: Visualize averages using `data/mess_data.csv`.
+- `model/train_model.py`: Trains and saves a Linear Regression model to `model/model.pkl`.
+- `app.py`: Simple CLI to load the trained model and predict ratings.
+
+**Notes & Tips**
+- `model/train_model.py` currently trains with a default `test_size=0.2` and prints model score.
+- If `model/model.pkl` is missing, run the training step before using `analysis.py`.
+
+**Contributing**
+- Improvements welcome: better models, validation, a small web UI, or richer EDA.
+
+**License & Contact**
+- Add a license file if you plan to publish.
+- For questions, open an issue or email the repository owner.
