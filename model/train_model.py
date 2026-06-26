@@ -1,10 +1,15 @@
+import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import pickle
 
+BASE_DIR=os.path.dirname(os.path.abspath(__file__))
+csv_path=os.path.join(BASE_DIR,"..","data","mess_data.csv")
+
+
 # Load dataset
-data = pd.read_csv('../data/mess_data.csv')
+data = pd.read_csv(csv_path)
 
 X = data[['food_quality', 'cleanliness', 'quantity', 'taste']]
 y = data['rating']
