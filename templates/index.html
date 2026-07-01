@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Food Feedback Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mess Food Feedback Dashboard</h1>
+            <p>Submit your feedback and view the live rating dashboard.</p>
+        </div>
+    </header>
+
+    <main class="container grid-two">
+        <section class="card form-card">
+            <h2>Submit Feedback</h2>
+            <form method="post" action="/">
+                <label for="food_quality">Food Quality (1-5)</label>
+                <input type="number" id="food_quality" name="food_quality" min="1" max="5" step="1" required>
+
+                <label for="cleanliness">Cleanliness (1-5)</label>
+                <input type="number" id="cleanliness" name="cleanliness" min="1" max="5" step="1" required>
+
+                <label for="quantity">Quantity (1-5)</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="5" step="1" required>
+
+                <label for="taste">Taste (1-5)</label>
+                <input type="number" id="taste" name="taste" min="1" max="5" step="1" required>
+
+                <button type="submit">Send Feedback</button>
+            </form>
+
+            {% if warning_message %}
+            <div class="warning-card">
+                <p>{{ warning_message }}</p>
+            </div>
+            {% endif %}
+
+            {% if prediction is not none %}
+            <div class="result-card">
+                <h3>Predicted Rating</h3>
+                <p class="rating">{{ prediction }}</p>
+                <p class="summary">Your feedback has been saved and the dashboard is updated.</p>
+            </div>
+            {% endif %}
+        </section>
+
+        <section class="card dashboard-card">
+            <h2>Live Dashboard</h2>
+            <div class="dashboard-visual stacked-charts">
+                <img src="data:image/png;base64,{{ plot_data_1 }}" alt="Average feedback scores chart">
+                <img src="data:image/png;base64,{{ plot_data_2 }}" alt="Prediction fluctuation chart">
+            </div>
+            <div class="dashboard-grid">
+                <div class="metric-card">
+                    <span class="metric-label">Total Feedback</span>
+                    <strong>{{ total_feedback }}</strong>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">Avg Food Quality</span>
+                    <strong>{{ averages.food_quality }}</strong>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">Avg Cleanliness</span>
+                    <strong>{{ averages.cleanliness }}</strong>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">Avg Quantity</span>
+                    <strong>{{ averages.quantity }}</strong>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">Avg Taste</span>
+                    <strong>{{ averages.taste }}</strong>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">Avg Rating</span>
+                    <strong>{{ averages.rating }}</strong>
+                </div>
+            </div>
+
+            <h3>Recent Feedback</h3>
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Food</th>
+                            <th>Clean</th>
+                            <th>Qty</th>
+                            <th>Taste</th>
+                            <th>Predicted</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in recent_feedback %}
+                        <tr>
+                            <td>{{ row.timestamp }}</td>
+                            <td>{{ row.food_quality }}</td>
+                            <td>{{ row.cleanliness }}</td>
+                            <td>{{ row.quantity }}</td>
+                            <td>{{ row.taste }}</td>
+                            <td>{{ row.predicted_rating }}</td>
+                        </tr>
+                        {% else %}
+                        <tr>
+                            <td colspan="6">No student feedback has been submitted yet.</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <p>Live feedback report generated from the dataset and recent submissions.</p>
+    </footer>
+</body>
+</html>
