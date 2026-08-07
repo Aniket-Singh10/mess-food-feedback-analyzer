@@ -1,5 +1,5 @@
 ## Problem Statement
-Mess food quality varies daily, and students often face inconsistency in food quality, cleanliness, and taste.
+Mess food quality varies daily, and students often face inconsistency in food quality, cleanliness, quantity, and taste.
 
 ## Objective
 To analyze and predict mess food ratings using machine learning based on different factors.
